@@ -525,6 +525,58 @@ loop
 src="assets/music/nuca.mp3">
 </audio>
 
+<!-- RSVP -->
+
+<section class="rsvp">
+
+<div class="container">
+
+<h2 class="section-title">
+Kehadiran & Ucapan
+</h2>
+
+<form id="wishForm">
+
+<input
+type="text"
+id="nama"
+placeholder="Nama Anda"
+required>
+
+<select id="kehadiran" required>
+
+<option value="">
+Konfirmasi Kehadiran
+</option>
+
+<option value="Hadir">
+Hadir
+</option>
+
+<option value="Tidak Hadir">
+Tidak Hadir
+</option>
+
+</select>
+
+<textarea
+id="ucapan"
+placeholder="Tulis ucapan dan doa..."
+required>
+</textarea>
+
+<button type="submit">
+Kirim Ucapan
+</button>
+
+</form>
+
+<div id="wishList"></div>
+
+</div>
+
+</section>
+    
 <script src="script.js"></script>
     
 </body>
