@@ -1,0 +1,323 @@
+// ======================
+// DATA TANGGAL AKAD
+// ======================
+
+const weddingDate = new Date("Oct 10, 2026 08:00:00").getTime();
+
+const countdown = setInterval(() => {
+
+const now = new Date().getTime();
+
+const distance = weddingDate - now;
+
+const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+const hours = Math.floor(
+(distance % (1000 * 60 * 60 * 24))
+/
+(1000 * 60 * 60)
+);
+
+const minutes = Math.floor(
+(distance % (1000 * 60 * 60))
+/
+(1000 * 60)
+);
+
+const seconds = Math.floor(
+(distance % (1000 * 60))
+/
+1000
+);
+
+if(document.getElementById("days")){
+document.getElementById("days").innerText = days;
+document.getElementById("hours").innerText = hours;
+document.getElementById("minutes").innerText = minutes;
+document.getElementById("seconds").innerText = seconds;
+}
+
+if(distance < 0){
+
+clearInterval(countdown);
+
+document.getElementById("days").innerText = "0";
+document.getElementById("hours").innerText = "0";
+document.getElementById("minutes").innerText = "0";
+document.getElementById("seconds").innerText = "0";
+
+}
+
+},1000);
+
+
+// ======================
+// BUKA UNDANGAN
+// ======================
+
+const openBtn = document.getElementById("openInvitation");
+
+if(openBtn){
+
+openBtn.addEventListener("click", function(){
+
+document.body.classList.add("opened");
+
+const hero = document.getElementById("hero");
+
+if(hero){
+hero.classList.add("hide");
+}
+
+const music = document.getElementById("music");
+
+if(music){
+
+music.play().catch(()=>{
+console.log("Autoplay blocked");
+});
+
+}
+
+window.scrollTo({
+top: document.getElementById("home").offsetTop,
+behavior: "smooth"
+});
+
+});
+
+}
+
+
+// ======================
+// NAMA TAMU DARI URL
+// ======================
+
+const urlParams = new URLSearchParams(window.location.search);
+
+const guestName = urlParams.get("to");
+
+const guestElement = document.getElementById("guestName");
+
+if(guestElement){
+
+if(guestName){
+
+guestElement.innerText =
+decodeURIComponent(guestName.replace(/\+/g,' '));
+
+}else{
+
+guestElement.innerText = "Bapak/Ibu/Saudara/i";
+
+}
+
+}
+
+
+// ======================
+// COPY REKENING
+// ======================
+
+function copyText(text){
+
+navigator.clipboard.writeText(text)
+.then(()=>{
+
+alert("Nomor rekening berhasil disalin");
+
+})
+.catch(err=>{
+
+console.log(err);
+
+});
+
+}
+
+
+// Rekening Wika
+
+const copyWika = document.getElementById("copyWika");
+
+if(copyWika){
+
+copyWika.addEventListener("click", ()=>{
+
+copyText("7179397107");
+
+});
+
+}
+
+
+// Rekening Miftah
+
+const copyMiftah = document.getElementById("copyMiftah");
+
+if(copyMiftah){
+
+copyMiftah.addEventListener("click", ()=>{
+
+copyText("7267551811");
+
+});
+
+}
+
+
+// ======================
+// SCROLL ANIMATION
+// ======================
+
+const revealElements =
+document.querySelectorAll(".reveal");
+
+function revealOnScroll(){
+
+const windowHeight = window.innerHeight;
+
+revealElements.forEach(el=>{
+
+const top = el.getBoundingClientRect().top;
+
+if(top < windowHeight - 100){
+
+el.classList.add("active");
+
+}
+
+});
+
+}
+
+window.addEventListener("scroll", revealOnScroll);
+
+revealOnScroll();
+
+
+// ======================
+// NAVIGATION ACTIVE
+// ======================
+
+const sections =
+document.querySelectorAll("section");
+
+const navLinks =
+document.querySelectorAll(".bottom-nav a");
+
+window.addEventListener("scroll", ()=>{
+
+let current = "";
+
+sections.forEach(section=>{
+
+const sectionTop =
+section.offsetTop - 150;
+
+if(pageYOffset >= sectionTop){
+
+current = section.getAttribute("id");
+
+}
+
+});
+
+navLinks.forEach(link=>{
+
+link.classList.remove("active");
+
+if(
+link.getAttribute("href")
+=== "#" + current
+){
+
+link.classList.add("active");
+
+}
+
+});
+
+});
+
+
+// ======================
+// SMOOTH SCROLL
+// ======================
+
+document.querySelectorAll('a[href^="#"]')
+.forEach(anchor=>{
+
+anchor.addEventListener("click", function(e){
+
+e.preventDefault();
+
+const target =
+document.querySelector(
+this.getAttribute("href")
+);
+
+if(target){
+
+target.scrollIntoView({
+
+behavior:"smooth"
+
+});
+
+}
+
+});
+
+});
+
+
+// ======================
+// MUSIC BUTTON
+// ======================
+
+const musicBtn =
+document.getElementById("musicToggle");
+
+const music =
+document.getElementById("music");
+
+if(musicBtn && music){
+
+musicBtn.addEventListener("click", ()=>{
+
+if(music.paused){
+
+music.play();
+
+musicBtn.innerHTML =
+'<i class="fa-solid fa-music"></i>';
+
+}else{
+
+music.pause();
+
+musicBtn.innerHTML =
+'<i class="fa-solid fa-volume-xmark"></i>';
+
+}
+
+});
+
+}
+
+
+// ======================
+// UCAPAN COUNT
+// ======================
+
+const wishesCount =
+document.getElementById("wishCount");
+
+if(wishesCount){
+
+let count = 0;
+
+wishesCount.innerText = count;
+
+}
