@@ -321,3 +321,74 @@ let count = 0;
 wishesCount.innerText = count;
 
 }
+
+const SCRIPT_URL =
+"https://script.google.com/macros/s/AKfycbzO-Xxo-6X6wg0LAXCzh7kuUziDAZypgZl_o8YRWjEHQY7JU3ETeq0C0URAit6buR5UiA/exec";
+
+const wishForm = document.getElementById("wishForm");
+const wishList = document.getElementById("wishList");
+
+if (wishForm) {
+
+loadWishes();
+
+wishForm.addEventListener("submit", async (e) => {
+
+e.preventDefault();
+
+const nama =
+document.getElementById("nama").value;
+
+const kehadiran =
+document.getElementById("kehadiran").value;
+
+const ucapan =
+document.getElementById("ucapan").value;
+
+await fetch(SCRIPT_URL, {
+
+method: "POST",
+
+body: JSON.stringify({
+nama,
+kehadiran,
+ucapan
+})
+
+});
+
+wishForm.reset();
+
+loadWishes();
+
+});
+
+}
+
+async function loadWishes() {
+
+const res = await fetch(SCRIPT_URL);
+
+const data = await res.json();
+
+wishList.innerHTML = "";
+
+data.reverse().forEach(item => {
+
+wishList.innerHTML += `
+
+<div class="wish-card">
+
+<h4>${item.nama}</h4>
+
+<small>${item.kehadiran}</small>
+
+<p>${item.ucapan}</p>
+
+</div>
+
+`;
+
+});
+
+}
