@@ -373,6 +373,11 @@ const data = await res.json();
 
 wishList.innerHTML = "";
 
+// UPDATE JUMLAH UCAPAN
+if (wishesCount) {
+    wishesCount.innerText = data.length;
+}
+
 data.reverse().forEach(item => {
 
 wishList.innerHTML += `
