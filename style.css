@@ -1,0 +1,443 @@
+/* =========================
+   RESET
+========================= */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#faf6f0;
+    color:#3d2c2c;
+    overflow-x:hidden;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+/* =========================
+   COVER
+========================= */
+
+.cover{
+    height:100vh;
+    background:
+    linear-gradient(rgba(74,20,38,.55),
+    rgba(74,20,38,.55)),
+    url('assets/cover.jpg');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.cover-content{
+    padding:20px;
+}
+
+.cover h4{
+    font-weight:400;
+    letter-spacing:2px;
+    margin-bottom:10px;
+}
+
+.cover h1{
+    font-family:'Cormorant Garamond',serif;
+    font-size:4rem;
+    margin-bottom:10px;
+}
+
+.cover p{
+    margin-bottom:25px;
+}
+
+.btn-open{
+    background:#fff;
+    color:#6d213c;
+    border:none;
+    padding:14px 30px;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-open:hover{
+    background:#f0e3d2;
+}
+
+/* =========================
+   SECTION
+========================= */
+
+section{
+    padding:80px 20px;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size:3rem;
+    color:#6d213c;
+}
+
+.section-title p{
+    color:#777;
+}
+
+/* =========================
+   COUPLE
+========================= */
+
+.couple-wrapper{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+.person{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.person img{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    object-fit:cover;
+    margin:auto;
+    margin-bottom:20px;
+    border:6px solid #e9d7c3;
+}
+
+.person h3{
+    color:#6d213c;
+    font-size:2rem;
+    font-family:'Cormorant Garamond',serif;
+}
+
+.person p{
+    margin-top:10px;
+    line-height:1.7;
+}
+
+/* =========================
+   COUNTDOWN
+========================= */
+
+.countdown{
+    background:#6d213c;
+    color:white;
+}
+
+.countdown-box{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.time-box{
+    background:white;
+    color:#6d213c;
+    width:120px;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+}
+
+.time-box span{
+    display:block;
+    font-size:2rem;
+    font-weight:bold;
+}
+
+.time-box small{
+    color:#777;
+}
+
+/* =========================
+   EVENT
+========================= */
+
+.event-wrapper{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+.event-card{
+    background:white;
+    border-radius:20px;
+    padding:35px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.event-card h3{
+    color:#6d213c;
+    margin-bottom:15px;
+    font-size:2rem;
+}
+
+.event-card p{
+    line-height:1.8;
+}
+
+.btn-map{
+    display:inline-block;
+    margin-top:20px;
+    background:#6d213c;
+    color:white;
+    padding:12px 25px;
+    border-radius:25px;
+}
+
+/* =========================
+   MAPS
+========================= */
+
+.map iframe{
+    width:100%;
+    height:450px;
+    border:none;
+    border-radius:20px;
+}
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
+}
+
+.gallery-grid img{
+    border-radius:15px;
+    height:300px;
+    object-fit:cover;
+    transition:.3s;
+}
+
+.gallery-grid img:hover{
+    transform:scale(1.03);
+}
+
+/* =========================
+   LOVE STORY
+========================= */
+
+.story{
+    background:#fff;
+}
+
+.timeline{
+    max-width:800px;
+    margin:auto;
+}
+
+.timeline-item{
+    background:white;
+    padding:25px;
+    border-left:4px solid #6d213c;
+    margin-bottom:25px;
+    border-radius:10px;
+    box-shadow:0 5px 20px rgba(0,0,0,.05);
+}
+
+.timeline-item h4{
+    color:#6d213c;
+    margin-bottom:10px;
+}
+
+/* =========================
+   GIFT
+========================= */
+
+.gift{
+    background:#f7efe7;
+}
+
+.gift-card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    margin-bottom:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.gift-card h3{
+    color:#6d213c;
+    margin-bottom:10px;
+}
+
+.rekening{
+    font-size:1.5rem;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+/* =========================
+   RSVP
+========================= */
+
+.rsvp-form{
+    max-width:700px;
+    margin:auto;
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.form-group{
+    margin-bottom:15px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+    width:100%;
+    padding:14px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:1rem;
+}
+
+.submit-btn{
+    width:100%;
+    border:none;
+    background:#6d213c;
+    color:white;
+    padding:14px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#6d213c;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+footer h3{
+    font-family:'Cormorant Garamond',serif;
+    font-size:2.5rem;
+    margin-bottom:10px;
+}
+
+/* =========================
+   MUSIC BUTTON
+========================= */
+
+.music-btn{
+    position:fixed;
+    right:20px;
+    bottom:90px;
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    border:none;
+    background:#6d213c;
+    color:white;
+    font-size:20px;
+    cursor:pointer;
+    z-index:999;
+}
+
+/* =========================
+   BOTTOM NAVIGATION
+========================= */
+
+.bottom-nav{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    background:white;
+    display:flex;
+    justify-content:space-around;
+    padding:12px 0;
+    box-shadow:0 -3px 15px rgba(0,0,0,.1);
+    z-index:999;
+}
+
+.bottom-nav a{
+    color:#6d213c;
+    font-size:.9rem;
+    font-weight:600;
+}
+
+/* =========================
+   ANIMATION
+========================= */
+
+.fade-up{
+    opacity:0;
+    transform:translateY(30px);
+    transition:.8s;
+}
+
+.fade-up.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    .cover h1{
+        font-size:3rem;
+    }
+
+    .couple-wrapper{
+        grid-template-columns:1fr;
+    }
+
+    .event-wrapper{
+        grid-template-columns:1fr;
+    }
+
+    .time-box{
+        width:90px;
+    }
+
+    .section-title h2{
+        font-size:2.3rem;
+    }
+}
