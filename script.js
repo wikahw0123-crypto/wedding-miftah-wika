@@ -55,39 +55,32 @@ document.getElementById("seconds").innerText = "0";
 // BUKA UNDANGAN
 // ======================
 
-const openBtn = document.getElementById("openInvitation");
+const openBtn =
+document.getElementById("openInvitation");
 
 if(openBtn){
 
-openBtn.addEventListener("click", function(){
+openBtn.addEventListener("click", ()=>{
 
 document.body.classList.add("opened");
 
-const hero = document.getElementById("hero");
-
-if(hero){
-hero.classList.add("hide");
-}
-
-const music = document.getElementById("music");
+const music =
+document.getElementById("music");
 
 if(music){
 
-music.play().catch(()=>{
-console.log("Autoplay blocked");
-});
+music.play().catch(()=>{});
 
 }
 
 window.scrollTo({
-top: document.getElementById("home").offsetTop,
-behavior: "smooth"
+top:0,
+behavior:"smooth"
 });
 
 });
 
 }
-
 
 // ======================
 // NAMA TAMU DARI URL
