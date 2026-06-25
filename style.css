@@ -277,31 +277,59 @@ section{
 }
 
 /* =========================
-   GIFT
+WEDDING GIFT
 ========================= */
 
-.gift{
-    background:#f7efe7;
+.gift-section{
+padding:80px 20px;
+text-align:center;
+background:#faf7f2;
+}
+
+.gift-text{
+max-width:600px;
+margin:auto;
+line-height:1.8;
+color:#666;
+}
+
+.gift-wrapper{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:25px;
+margin-top:40px;
 }
 
 .gift-card{
-    background:white;
-    padding:30px;
-    border-radius:20px;
-    text-align:center;
-    margin-bottom:20px;
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
+background:white;
+padding:30px;
+border-radius:20px;
+width:300px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
 }
 
 .gift-card h3{
-    color:#6d213c;
-    margin-bottom:10px;
+margin-bottom:10px;
 }
 
-.rekening{
-    font-size:1.5rem;
-    font-weight:bold;
-    margin:10px 0;
+.rekening-name{
+color:#777;
+margin-bottom:10px;
+}
+
+.gift-card h4{
+font-size:24px;
+margin-bottom:20px;
+}
+
+.gift-card button{
+padding:12px 20px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+background:#8b5e3c;
+color:white;
 }
 
 /* =========================
@@ -372,20 +400,39 @@ section{
 }
 
 /* =========================
-   FOOTER
+THANK YOU
 ========================= */
 
-footer{
-    background:#6d213c;
-    color:white;
-    text-align:center;
-    padding:50px 20px;
+.thanks-section{
+padding:100px 20px;
+text-align:center;
+background:#fffdf8;
 }
 
-footer h3{
-    font-family:'Cormorant Garamond',serif;
-    font-size:2.5rem;
-    margin-bottom:10px;
+.thanks-text{
+max-width:650px;
+margin:15px auto;
+line-height:1.8;
+color:#666;
+}
+
+.closing-name{
+margin-top:40px;
+font-size:40px;
+font-family:'Cormorant Garamond',serif;
+color:#8b5e3c;
+}
+
+/* =========================
+FOOTER
+========================= */
+
+.footer{
+background:#8b5e3c;
+color:white;
+text-align:center;
+padding:25px;
+font-size:14px;
 }
 
 /* =========================
