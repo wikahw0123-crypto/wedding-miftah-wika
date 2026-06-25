@@ -137,8 +137,15 @@ copyWika.addEventListener("click", ()=>{
 
 copyText("7179397107");
 
-document.getElementById("copyMsgWika").innerText =
+const copyMsgWika =
+document.getElementById("copyMsgWika");
+
+copyMsgWika.innerText =
 "Nomor rekening berhasil disalin ❤️";
+
+setTimeout(() => {
+  copyMsgWika.innerText = "";
+}, 3000);
     
 });
 
@@ -155,8 +162,15 @@ copyMiftah.addEventListener("click", ()=>{
 
 copyText("4460710222");
 
-document.getElementById("copyMsgMiftah").innerText =
-"Nomor rekening berhasil disalin ❤️";    
+const copyMsgMiftah =
+document.getElementById("copyMsgMiftah");
+
+copyMsgMiftah.innerText =
+"Nomor rekening berhasil disalin ❤️";
+
+setTimeout(() => {
+  copyMsgMiftah.innerText = "";
+}, 3000);    
     
 });
 
@@ -354,8 +368,15 @@ ucapan
 
 });
 
-document.getElementById("rsvpMessage").innerText =
+const rsvpMsg =
+document.getElementById("rsvpMessage");
+
+rsvpMsg.innerText =
 "Ucapan berhasil dikirim ❤️";
+
+setTimeout(() => {
+  rsvpMsg.innerText = "";
+}, 3000);
     
 wishForm.reset();
 
