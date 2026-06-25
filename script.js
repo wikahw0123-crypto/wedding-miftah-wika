@@ -153,7 +153,7 @@ if(copyMiftah){
 
 copyMiftah.addEventListener("click", ()=>{
 
-copyText("7267551811");
+copyText("4460710222");
 
 document.getElementById("copyMsgMiftah").innerText =
 "Nomor rekening berhasil disalin ❤️";    
