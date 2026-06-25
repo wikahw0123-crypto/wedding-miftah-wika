@@ -595,3 +595,10 @@ body.opened #cover{
     color:#6d213c;
     margin-bottom:10px;
 }
+
+#rsvpMessage{
+margin-top:15px;
+color:#6d213c;
+font-weight:600;
+text-align:center;
+}
