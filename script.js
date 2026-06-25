@@ -283,15 +283,13 @@ if(music.paused){
 
 music.play();
 
-musicBtn.innerHTML =
-'<i class="fa-solid fa-music"></i>';
+musicBtn.innerHTML = "🎵";
 
 }else{
 
 music.pause();
 
-musicBtn.innerHTML =
-'<i class="fa-solid fa-volume-xmark"></i>';
+musicBtn.innerHTML = "🔇";
 
 }
 
