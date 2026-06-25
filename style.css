@@ -529,3 +529,15 @@ z-index:9999;
     color:#777;
     font-size:.9rem;
 }
+
+#main-content{
+    display:none;
+}
+
+body.opened #main-content{
+    display:block;
+}
+
+body.opened #cover{
+    display:none;
+}
