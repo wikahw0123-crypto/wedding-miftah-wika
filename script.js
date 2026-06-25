@@ -117,8 +117,6 @@ function copyText(text){
 navigator.clipboard.writeText(text)
 .then(()=>{
 
-alert("Nomor rekening berhasil disalin");
-
 })
 .catch(err=>{
 
@@ -139,6 +137,9 @@ copyWika.addEventListener("click", ()=>{
 
 copyText("7179397107");
 
+document.getElementById("copyMsgWika").innerText =
+"Nomor rekening berhasil disalin ❤️";
+    
 });
 
 }
@@ -154,6 +155,9 @@ copyMiftah.addEventListener("click", ()=>{
 
 copyText("7267551811");
 
+document.getElementById("copyMsgMiftah").innerText =
+"Nomor rekening berhasil disalin ❤️";    
+    
 });
 
 }
@@ -350,7 +354,8 @@ ucapan
 
 });
 
-alert("Ucapan berhasil dikirim ❤️");
+document.getElementById("rsvpMessage").innerText =
+"Ucapan berhasil dikirim ❤️";
     
 wishForm.reset();
 
