@@ -90,14 +90,14 @@ const urlParams = new URLSearchParams(window.location.search);
 
 const guestName = urlParams.get("to");
 
-const guestElement = document.getElementById("guestName");
+const guestElement = document.getElementById("guest-name");
 
 if(guestElement){
 
-if(guestName){
+if(guest-name){
 
 guestElement.innerText =
-decodeURIComponent(guestName.replace(/\+/g,' '));
+decodeURIComponent(guest-name.replace(/\+/g,' '));
 
 }else{
 
@@ -395,5 +395,34 @@ wishList.innerHTML += `
 `;
 
 });
+
+}
+
+function doPost(e) {
+
+Logger.log(e.postData.contents);
+
+const sheet =
+SpreadsheetApp
+.getActiveSpreadsheet()
+.getSheetByName("RSVP");
+
+const data =
+JSON.parse(e.postData.contents);
+
+sheet.appendRow([
+new Date(),
+data.nama,
+data.kehadiran,
+data.ucapan
+]);
+
+return ContentService
+.createTextOutput(
+JSON.stringify({
+status:"success"
+})
+)
+.setMimeType(ContentService.MimeType.JSON);
 
 }
