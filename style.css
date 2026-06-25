@@ -596,9 +596,12 @@ body.opened #cover{
     margin-bottom:10px;
 }
 
-#rsvpMessage{
-margin-top:15px;
-color:#6d213c;
-font-weight:600;
-text-align:center;
+#rsvpMessage,
+#copyMsgWika,
+#copyMsgMiftah{
+    color:#8b5e3c;
+    font-size:14px;
+    margin-top:10px;
+    font-style:italic;
+    transition:all .3s ease;
 }
