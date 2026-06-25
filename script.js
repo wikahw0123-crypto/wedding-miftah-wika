@@ -332,7 +332,7 @@ wishesCount.innerText = count;
 }
 
 const SCRIPT_URL =
-"https://script.google.com/macros/s/AKfycbz12EAKhaAP4Av4vz5CgM__tkm1iCs5ZuTOo1NnqAtP0nnzi7c_ZYW0i0BeoYLNPi7vhA/exec";
+"https://script.google.com/macros/s/AKfycbyvcRz8d3AK6LXRee9LleZgv_DeYXgWX0IzkKp7YFKHD8BLNjCQXSME-Kz_pkFNdBXWqA/exec";
 
 const wishForm = document.getElementById("wishForm");
 const wishList = document.getElementById("wishList");
