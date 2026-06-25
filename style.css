@@ -588,3 +588,10 @@ body.opened #main-content{
 body.opened #cover{
     display:none;
 }
+
+.location-place{
+    font-size:1.1rem;
+    font-weight:600;
+    color:#6d213c;
+    margin-bottom:10px;
+}
