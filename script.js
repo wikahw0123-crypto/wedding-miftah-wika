@@ -94,10 +94,10 @@ const guestElement = document.getElementById("guest-name");
 
 if(guestElement){
 
-if(guest-name){
+if(guestName){
 
 guestElement.innerText =
-decodeURIComponent(guest-name.replace(/\+/g,' '));
+decodeURIComponent(guestName.replace(/\+/g,' '));
 
 }else{
 
@@ -395,34 +395,5 @@ wishList.innerHTML += `
 `;
 
 });
-
-}
-
-function doPost(e) {
-
-Logger.log(e.postData.contents);
-
-const sheet =
-SpreadsheetApp
-.getActiveSpreadsheet()
-.getSheetByName("RSVP");
-
-const data =
-JSON.parse(e.postData.contents);
-
-sheet.appendRow([
-new Date(),
-data.nama,
-data.kehadiran,
-data.ucapan
-]);
-
-return ContentService
-.createTextOutput(
-JSON.stringify({
-status:"success"
-})
-)
-.setMimeType(ContentService.MimeType.JSON);
 
 }
