@@ -350,6 +350,8 @@ ucapan
 
 });
 
+alert("Ucapan berhasil dikirim ❤️");
+    
 wishForm.reset();
 
 loadWishes();
