@@ -60,27 +60,35 @@ document.getElementById("openInvitation");
 
 if(openBtn){
 
-openBtn.addEventListener("click", ()=>{
+openBtn.addEventListener("click",()=>{
+
+const cover =
+document.getElementById("cover");
+
+cover.style.opacity="0";
+
+setTimeout(()=>{
 
 document.body.classList.add("opened");
+
+cover.style.display="none";
 
 const music =
 document.getElementById("music");
 
-if(music){
-
 music.play().catch(()=>{});
 
-}
-
 window.scrollTo({
+
 top:0,
+
 behavior:"smooth"
-});
 
 });
 
-}
+},900);
+
+});
 
 // ======================
 // NAMA TAMU DARI URL
@@ -299,6 +307,12 @@ musicBtn.addEventListener("click", ()=>{
 
 if(music.paused){
 
+for(let i=0;i<18;i++){
+
+setTimeout(createPetal,i*180);
+
+}
+  
 music.play();
 
 musicBtn.innerHTML = "🎵";
@@ -560,3 +574,33 @@ startAutoSlide();
 }
 
 startAutoSlide();
+
+// ======================
+// PETALS
+// ======================
+
+function createPetal(){
+
+const petal =
+document.createElement("div");
+
+petal.className="petal";
+
+petal.innerHTML="🌸";
+
+petal.style.left=Math.random()*100+"vw";
+
+petal.style.animationDuration=
+4+Math.random()*3+"s";
+
+document
+.getElementById("petals")
+.appendChild(petal);
+
+setTimeout(()=>{
+
+petal.remove();
+
+},7000);
+
+}
