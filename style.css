@@ -24,59 +24,6 @@ a{
     text-decoration:none;
 }
 
-/* =========================
-   COVER
-========================= */
-
-.cover{
-    height:100vh;
-    background:
-    linear-gradient(rgba(74,20,38,.55),
-    rgba(74,20,38,.55)),
-    url('assets/cover.jpg');
-    background-size:cover;
-    background-position:center;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    color:white;
-}
-
-.cover-content{
-    padding:20px;
-}
-
-.cover h4{
-    font-weight:400;
-    letter-spacing:2px;
-    margin-bottom:10px;
-}
-
-.cover h1{
-    font-family:'Cormorant Garamond',serif;
-    font-size:4rem;
-    margin-bottom:10px;
-}
-
-.cover p{
-    margin-bottom:25px;
-}
-
-.btn-open{
-    background:#fff;
-    color:#6d213c;
-    border:none;
-    padding:14px 30px;
-    border-radius:30px;
-    cursor:pointer;
-    font-weight:600;
-    transition:.3s;
-}
-
-.btn-open:hover{
-    background:#f0e3d2;
-}
 
 /* =========================
    SECTION
@@ -337,40 +284,6 @@ line-height:1.8;
 
 }
 
-/* =========================
-   COUNTDOWN
-========================= */
-
-.countdown{
-    background:#6d213c;
-    color:white;
-}
-
-.countdown-box{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
-}
-
-.time-box{
-    background:white;
-    color:#6d213c;
-    width:120px;
-    padding:20px;
-    border-radius:15px;
-    text-align:center;
-}
-
-.time-box span{
-    display:block;
-    font-size:2rem;
-    font-weight:bold;
-}
-
-.time-box small{
-    color:#777;
-}
 
 /* =========================
    EVENT
@@ -566,32 +479,6 @@ transform:scale(1);
 
 }
 
-/* =========================
-   LOVE STORY
-========================= */
-
-.story{
-    background:#fff;
-}
-
-.timeline{
-    max-width:800px;
-    margin:auto;
-}
-
-.timeline-item{
-    background:white;
-    padding:25px;
-    border-left:4px solid #6d213c;
-    margin-bottom:25px;
-    border-radius:10px;
-    box-shadow:0 5px 20px rgba(0,0,0,.05);
-}
-
-.timeline-item h4{
-    color:#6d213c;
-    margin-bottom:10px;
-}
 
 /* =========================
    WEDDING GIFT PREMIUM
@@ -1113,10 +1000,6 @@ z-index:9999;
     margin-top:10px;
     color:#777;
     font-size:.9rem;
-}
-
-#main-content{
-    display:none;
 }
 
 body.opened #main-content{
