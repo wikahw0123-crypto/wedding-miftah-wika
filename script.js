@@ -50,6 +50,43 @@ document.getElementById("seconds").innerText = "0";
 
 },1000);
 
+const music =
+document.getElementById("music");
+
+// ======================
+// MUSIC BUTTON
+// ======================
+
+const musicBtn =
+document.getElementById("musicToggle");
+
+if(musicBtn && music){
+
+musicBtn.addEventListener("click", ()=>{
+
+if(music.paused){
+
+for(let i=0;i<18;i++){
+
+setTimeout(createPetal,i*180);
+
+}
+  
+music.play();
+
+musicBtn.innerHTML = "🎵";
+
+}else{
+
+music.pause();
+
+musicBtn.innerHTML = "🔇";
+
+}
+
+});
+
+}
 
 // ======================
 // BUKA UNDANGAN
@@ -73,6 +110,8 @@ behavior:"smooth"
 
 });
 
+}
+  
 // ======================
 // NAMA TAMU DARI URL
 // ======================
@@ -197,45 +236,6 @@ behavior:"smooth"
 });
 
 });
-
-
-// ======================
-// MUSIC BUTTON
-// ======================
-
-const musicBtn =
-document.getElementById("musicToggle");
-
-const music =
-document.getElementById("music");
-
-if(musicBtn && music){
-
-musicBtn.addEventListener("click", ()=>{
-
-if(music.paused){
-
-for(let i=0;i<18;i++){
-
-setTimeout(createPetal,i*180);
-
-}
-  
-music.play();
-
-musicBtn.innerHTML = "🎵";
-
-}else{
-
-music.pause();
-
-musicBtn.innerHTML = "🔇";
-
-}
-
-});
-
-}
 
 
 // ======================
