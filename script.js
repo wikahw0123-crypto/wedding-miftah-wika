@@ -420,45 +420,60 @@ wishList.innerHTML += `
 }
 
 // ======================
-// GALLERY LIGHTBOX
+// GALLERY SLIDER
 // ======================
 
-const galleryImages =
-document.querySelectorAll(".gallery-grid img");
+const slides =
+document.querySelectorAll(".slide");
 
-const lightbox =
-document.getElementById("lightbox");
+const nextBtn =
+document.querySelector(".next");
 
-const lightboxImg =
-document.getElementById("lightboxImg");
+const prevBtn =
+document.querySelector(".prev");
 
-const closeLightbox =
-document.getElementById("closeLightbox");
+let currentSlide = 0;
 
-galleryImages.forEach(img=>{
+function showSlide(index){
 
-img.addEventListener("click",()=>{
+slides.forEach(slide=>{
 
-lightbox.style.display="flex";
-
-lightboxImg.src=img.src;
+slide.classList.remove("active");
 
 });
 
-});
-
-closeLightbox.addEventListener("click",()=>{
-
-lightbox.style.display="none";
-
-});
-
-lightbox.addEventListener("click",(e)=>{
-
-if(e.target===lightbox){
-
-lightbox.style.display="none";
+slides[index].classList.add("active");
 
 }
 
+if(nextBtn && prevBtn){
+
+nextBtn.addEventListener("click",()=>{
+
+currentSlide++;
+
+if(currentSlide >= slides.length){
+
+currentSlide = 0;
+
+}
+
+showSlide(currentSlide);
+
 });
+
+prevBtn.addEventListener("click",()=>{
+
+currentSlide--;
+
+if(currentSlide < 0){
+
+currentSlide = slides.length-1;
+
+}
+
+showSlide(currentSlide);
+
+});
+
+}
