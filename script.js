@@ -420,35 +420,29 @@ wishList.innerHTML += `
 }
 
 // ======================
-// GALLERY SLIDER
+// GALLERY SLIDER PREMIUM
 // ======================
 
-const slides =
-document.querySelectorAll(".slide");
+const slides = document.querySelectorAll(".slide");
+const dots = document.querySelectorAll(".dot");
 
-const nextBtn =
-document.querySelector(".next");
-
-const prevBtn =
-document.querySelector(".prev");
+const nextBtn = document.querySelector(".next");
+const prevBtn = document.querySelector(".prev");
 
 let currentSlide = 0;
+let autoSlide;
 
 function showSlide(index){
 
-slides.forEach(slide=>{
-
-slide.classList.remove("active");
-
-});
+slides.forEach(slide=>slide.classList.remove("active"));
+dots.forEach(dot=>dot.classList.remove("active"));
 
 slides[index].classList.add("active");
+dots[index].classList.add("active");
 
 }
 
-if(nextBtn && prevBtn){
-
-nextBtn.addEventListener("click",()=>{
+function nextSlide(){
 
 currentSlide++;
 
@@ -460,20 +454,109 @@ currentSlide = 0;
 
 showSlide(currentSlide);
 
-});
+}
 
-prevBtn.addEventListener("click",()=>{
+function prevSlide(){
 
 currentSlide--;
 
 if(currentSlide < 0){
 
-currentSlide = slides.length-1;
+currentSlide = slides.length - 1;
 
 }
 
 showSlide(currentSlide);
 
+}
+
+function startAutoSlide(){
+
+autoSlide = setInterval(nextSlide,3000);
+
+}
+
+function stopAutoSlide(){
+
+clearInterval(autoSlide);
+
+}
+
+if(nextBtn && prevBtn){
+
+nextBtn.addEventListener("click",()=>{
+
+nextSlide();
+
+stopAutoSlide();
+
+startAutoSlide();
+
+});
+
+prevBtn.addEventListener("click",()=>{
+
+prevSlide();
+
+stopAutoSlide();
+
+startAutoSlide();
+
 });
 
 }
+
+dots.forEach((dot,index)=>{
+
+dot.addEventListener("click",()=>{
+
+currentSlide = index;
+
+showSlide(currentSlide);
+
+stopAutoSlide();
+
+startAutoSlide();
+
+});
+
+});
+
+const slider =
+document.querySelector(".slider-track");
+
+if(slider){
+
+let startX = 0;
+
+slider.addEventListener("touchstart",(e)=>{
+
+startX = e.touches[0].clientX;
+
+stopAutoSlide();
+
+});
+
+slider.addEventListener("touchend",(e)=>{
+
+let endX = e.changedTouches[0].clientX;
+
+if(startX-endX>50){
+
+nextSlide();
+
+}
+
+if(endX-startX>50){
+
+prevSlide();
+
+}
+
+startAutoSlide();
+
+});
+
+}
+
+startAutoSlide();
