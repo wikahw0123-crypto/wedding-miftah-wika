@@ -62,31 +62,14 @@ if(openBtn){
 
 openBtn.addEventListener("click",()=>{
 
-const cover =
-document.getElementById("cover");
-
-cover.style.opacity="0";
-
-setTimeout(()=>{
-
 document.body.classList.add("opened");
-
-cover.style.display="none";
-
-const music =
-document.getElementById("music");
 
 music.play().catch(()=>{});
 
 window.scrollTo({
-
 top:0,
-
 behavior:"smooth"
-
 });
-
-},900);
 
 });
 
