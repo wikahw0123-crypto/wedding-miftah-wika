@@ -1165,18 +1165,6 @@ z-index:9998;
 
 }
 
-.petal{
-
-position:absolute;
-
-top:-40px;
-
-font-size:22px;
-
-animation:fall linear forwards;
-
-}
-
 @keyframes fall{
 
 to{
