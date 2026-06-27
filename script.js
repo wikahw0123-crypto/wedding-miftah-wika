@@ -65,12 +65,6 @@ if(musicBtn && music){
 musicBtn.addEventListener("click", ()=>{
 
 if(music.paused){
-
-for(let i=0;i<18;i++){
-
-setTimeout(createPetal,i*180);
-
-}
   
 music.play();
 
@@ -483,32 +477,3 @@ startAutoSlide();
 
 startAutoSlide();
 
-// ======================
-// PETALS
-// ======================
-
-function createPetal(){
-
-const petal =
-document.createElement("div");
-
-petal.className="petal";
-
-petal.innerHTML="🌸";
-
-petal.style.left=Math.random()*100+"vw";
-
-petal.style.animationDuration=
-4+Math.random()*3+"s";
-
-document
-.getElementById("petals")
-.appendChild(petal);
-
-setTimeout(()=>{
-
-petal.remove();
-
-},7000);
-
-}
