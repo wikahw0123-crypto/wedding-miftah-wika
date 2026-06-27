@@ -961,6 +961,23 @@ height:100vh;
 z-index:9999;
 }
 
+#cover{
+
+background:
+
+linear-gradient(
+rgba(250,246,240,.88),
+rgba(250,246,240,.88)
+),
+
+url("assets/images/bg-texture.jpg");
+
+background-size:cover;
+
+background-position:center;
+
+}
+
 /* =========================
    COUNTDOWN PREMIUM
 ========================= */
@@ -1178,3 +1195,61 @@ opacity:0;
 }
 
 }
+
+/* =========================
+FLOWER CORNER
+========================= */
+
+.cover-flower{
+
+position:fixed;
+
+width:300px;
+
+height:300px;
+
+background-size:contain;
+
+background-repeat:no-repeat;
+
+pointer-events:none;
+
+z-index:5;
+
+opacity:.95;
+
+}
+
+.flower-left{
+
+top:0;
+left:0;
+
+background-image:url("assets/images/flower-corner.png");
+
+}
+
+.flower-right{
+
+bottom:0;
+right:0;
+
+background-image:url("assets/images/flower-corner.png");
+
+transform:rotate(180deg);
+
+}
+
+body.opened .cover-flower{
+
+display:none;
+
+}
+
+.cover-flower{
+
+filter:
+drop-shadow(0 0 25px rgba(255,255,255,.35));
+
+}
+
