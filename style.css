@@ -1409,26 +1409,21 @@ opacity:.82;
 
 }
 
-.flower-left{
-
-top:0;
-left:0;
-
-background-image:url("assets/images/flower-corner.png");
-
+.flower-left {
+  top: 0;
+  left: 0;
+  background-image: url("assets/images/flower-corner.png");
+  /* Diputar 180 derajat supaya siku tebalnya pas di sudut kiri atas */
+  transform: rotate(180deg); 
 }
 
-.flower-right{
-
-bottom:0;
-right:0;
-
-background-image:url("assets/images/flower-corner.png");
-
-transform:rotate(180deg);
-
+.flower-right {
+  bottom: 0;
+  right: 0;
+  background-image: url("assets/images/flower-corner.png");
+  /* Dihilangkan rotasinya karena orientasi aslinya sudah pas untuk kanan bawah */
+  transform: none; 
 }
-
 body.opened .cover-flower{
 
 display:none;
