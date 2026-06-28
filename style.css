@@ -1411,17 +1411,18 @@ opacity:.82;
 
 .flower-left{
   top:0;
-  left:0;
+  right:0;   /* 🔁 dari left ke right */
+  left:auto;
   background-image:url("assets/images/flower-corner.png");
-  transform-origin: top left;
+  transform: rotate(0deg);
 }
 
 .flower-right{
   bottom:0;
-  right:0;
+  left:0;    /* 🔁 dari right ke left */
+  right:auto;
   background-image:url("assets/images/flower-corner.png");
   transform: rotate(180deg);
-  transform-origin: bottom right;
 }
 
 body.opened .cover-flower{
