@@ -406,7 +406,10 @@ nextSlide();
 
 stopAutoSlide();
 
-startAutoSlide();
+if(slides.length > 0){
+    showSlide(0);
+    startAutoSlide();
+}
 
 });
 
