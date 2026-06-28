@@ -1410,16 +1410,23 @@ opacity:.82;
 }
 
 .flower-left{
-top:0;
-left:0;
+
+top:-70px;
+left:-75px;
+
 background-image:url("assets/images/flower-corner.png");
+
 }
 
 .flower-right{
-bottom:0;
-right:0;
+
+bottom:-70px;
+right:-75px;
+
 background-image:url("assets/images/flower-corner.png");
+
 transform:rotate(180deg);
+
 }
 
 body.opened .cover-flower{
