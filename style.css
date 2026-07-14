@@ -1600,3 +1600,61 @@ transform:translateY(0);
 }
 
 }
+
+/* =========================
+OPENING
+========================= */
+
+.opening{
+
+padding:90px 20px;
+
+background:#fffdf9;
+
+text-align:center;
+
+}
+
+.opening-content{
+
+max-width:720px;
+
+margin:auto;
+
+}
+
+.opening-title{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:42px;
+
+font-weight:600;
+
+color:#6d213c;
+
+margin-bottom:20px;
+
+}
+
+.opening-divider{
+
+font-size:30px;
+
+color:#b58b5c;
+
+margin-bottom:25px;
+
+}
+
+.opening-text{
+
+font-size:17px;
+
+line-height:2;
+
+color:#666;
+
+white-space:pre-line;
+
+}
