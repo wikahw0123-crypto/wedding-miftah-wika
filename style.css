@@ -103,19 +103,20 @@ margin-top:50px;
 
 .person{
 
-width:330px;
+background:#fffdf9;
 
-background:white;
+padding:45px 35px;
 
-padding:35px;
-
-border-radius:30px;
+border-radius:28px;
 
 text-align:center;
 
-box-shadow:0 15px 40px rgba(0,0,0,.08);
+border:1px solid #eee4d6;
 
-transition:.35s;
+box-shadow:
+0 15px 35px rgba(0,0,0,.05);
+
+transition:.4s;
 
 position:relative;
 
@@ -125,9 +126,10 @@ overflow:hidden;
 
 .person:hover{
 
-transform:translateY(-10px);
+transform:translateY(-8px);
 
-box-shadow:0 25px 45px rgba(0,0,0,.12);
+box-shadow:
+0 25px 50px rgba(0,0,0,.08);
 
 }
 
@@ -137,17 +139,40 @@ content:"";
 
 position:absolute;
 
-top:-80px;
+top:-110px;
 
-right:-80px;
+right:-110px;
 
-width:180px;
+width:240px;
 
-height:180px;
-
-background:#f7ede3;
+height:240px;
 
 border-radius:50%;
+
+background:
+radial-gradient(
+circle,
+rgba(231,205,179,.55),
+rgba(255,255,255,0)
+);
+
+}
+
+.photo-frame img{
+
+width:100%;
+
+height:100%;
+
+border-radius:50%;
+
+object-fit:cover;
+
+}
+
+.person:hover .photo-frame img{
+
+transform:scale(1.05);
 
 }
 
@@ -170,7 +195,9 @@ background:linear-gradient(
 #d8b89c
 );
 
-box-shadow:0 12px 30px rgba(0,0,0,.12);
+box-shadow:
+0 12px 30px rgba(0,0,0,.08),
+0 0 0 8px rgba(255,255,255,.5);
 
 margin-bottom:25px;
 
@@ -178,17 +205,35 @@ position:relative;
 
 z-index:2;
 
+overflow:hidden;
+
 }
 
 .photo-frame img{
 
-width:100%;
+transition:.5s;
 
-height:100%;
+}
 
-border-radius:50%;
+.person h3::before{
 
-object-fit:cover;
+content:"";
+
+display:block;
+
+width:55px;
+
+height:2px;
+
+background:#d8b89c;
+
+margin:0 auto 18px;
+
+}
+
+.person:hover .photo-frame img{
+
+transform:scale(1.05);
 
 }
 
@@ -230,9 +275,11 @@ padding:12px 26px;
 
 border-radius:30px;
 
-background:#8b5e3c;
+background:transparent;
 
-color:white;
+border:1px solid #8b5e3c;
+
+color:#8b5e3c;
 
 font-size:14px;
 
@@ -250,13 +297,17 @@ z-index:2;
 
 background:#6d213c;
 
+color:white;
+
 transform:scale(1.05);
 
 }
 
 .heart-divider{
 
-font-size:60px;
+font-size:40px;
+
+letter-spacing:8px;
 
 color:#b88a67;
 
