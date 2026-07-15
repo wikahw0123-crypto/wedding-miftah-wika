@@ -1360,6 +1360,85 @@ color:#9b6d4a;
    COUNTDOWN PREMIUM
 ========================= */
 
+/* Background Countdown */
+
+.countdown{
+
+position:relative;
+
+padding:100px 20px;
+
+overflow:hidden;
+
+background:
+
+linear-gradient(
+rgba(252,249,244,.94),
+rgba(252,249,244,.94)
+),
+
+url("assets/images/bg-texture.jpg");
+
+background-size:cover;
+
+background-position:center;
+
+}
+
+.countdown::before{
+
+content:"";
+
+position:absolute;
+
+top:-40px;
+
+left:-40px;
+
+width:220px;
+
+height:220px;
+
+background:url("assets/images/flower-corner.png");
+
+background-size:contain;
+
+background-repeat:no-repeat;
+
+opacity:.08;
+
+pointer-events:none;
+
+}
+
+.countdown::after{
+
+content:"";
+
+position:absolute;
+
+bottom:-40px;
+
+right:-40px;
+
+width:220px;
+
+height:220px;
+
+background:url("assets/images/flower-corner.png");
+
+background-size:contain;
+
+background-repeat:no-repeat;
+
+transform:rotate(180deg);
+
+opacity:.08;
+
+pointer-events:none;
+
+}
+
 .countdown-wrapper{
     display:grid;
     grid-template-columns:repeat(2,120px);
@@ -1369,32 +1448,83 @@ color:#9b6d4a;
 }
 
 .count-box{
-    width:120px;
-    height:120px;
 
-    background:#fffaf5;
-    border:2px solid #e9d7c3;
-    border-radius:20px;
+width:120px;
 
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
+height:120px;
 
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
+background:
+
+linear-gradient(
+180deg,
+#fffefc,
+#faf6f1
+);
+
+border:1px solid rgba(216,184,156,.45);
+
+border-radius:20px;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+box-shadow:
+
+0 12px 28px rgba(0,0,0,.08);
+
+transition:.35s;
+
+}
+
+.count-box:hover{
+
+transform:translateY(-6px);
+
+box-shadow:
+
+0 18px 36px rgba(0,0,0,.12);
+
 }
 
 .count-box span{
-    font-size:2.2rem;
-    font-weight:700;
-    color:#6d213c;
-    line-height:1;
+
+font-size:3rem;
+
+font-weight:700;
+
+color:#6d213c;
+
+line-height:1;
+
+margin-bottom:6px;
+
 }
 
 .count-box small{
-    margin-top:10px;
-    color:#777;
-    font-size:.9rem;
+
+margin-top:4px;
+
+font-size:.95rem;
+
+letter-spacing:1px;
+
+color:#777;
+
+}
+
+.count-ornament{
+
+font-size:28px;
+
+color:#d1a46b;
+
+margin-bottom:10px;
+
 }
 
 body.opened #main-content{
