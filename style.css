@@ -1362,8 +1362,8 @@ color:#9b6d4a;
 
 /* Background Countdown */
 
-.countdown{
-
+.countdown-section{
+   
 position:relative;
 
 padding:100px 20px;
@@ -1385,7 +1385,7 @@ background-position:center;
 
 }
 
-.countdown::before{
+.countdown-section::before
 
 content:"";
 
@@ -1411,7 +1411,7 @@ pointer-events:none;
 
 }
 
-.countdown::after{
+.countdown-section::after
 
 content:"";
 
@@ -1524,6 +1524,39 @@ font-size:28px;
 color:#d1a46b;
 
 margin-bottom:10px;
+
+}
+
+.count-ornament{
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+gap:16px;
+
+font-size:28px;
+
+color:#d1a46b;
+
+margin-bottom:16px;
+
+}
+
+.count-ornament::before,
+.count-ornament::after{
+
+content:"";
+
+width:60px;
+
+height:1px;
+
+background:#d8b89c;
+
+opacity:.6;
 
 }
 
