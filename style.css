@@ -1385,7 +1385,7 @@ background-position:center;
 
 }
 
-.countdown-section::before
+.countdown-section::before{
 
 content:"";
 
@@ -1411,7 +1411,7 @@ pointer-events:none;
 
 }
 
-.countdown-section::after
+.countdown-section::after{
 
 content:"";
 
@@ -1519,16 +1519,6 @@ color:#777;
 
 .count-ornament{
 
-font-size:28px;
-
-color:#d1a46b;
-
-margin-bottom:10px;
-
-}
-
-.count-ornament{
-
 display:flex;
 
 align-items:center;
@@ -1557,6 +1547,20 @@ height:1px;
 background:#d8b89c;
 
 opacity:.6;
+
+}
+
+.countdown-section .container{
+
+max-width:900px;
+
+margin:0 auto;
+
+text-align:center;
+
+position:relative;
+
+z-index:2;
 
 }
 
