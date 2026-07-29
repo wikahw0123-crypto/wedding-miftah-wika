@@ -83,6 +83,16 @@ musicBtn.innerHTML = "🔇";
 }
 
 // ======================
+// PRELOAD MUSIC
+// ======================
+
+if (music) {
+
+music.load();
+
+}
+
+// ======================
 // BUKA UNDANGAN
 // ======================
 
@@ -91,20 +101,31 @@ document.getElementById("openInvitation");
 
 if(openBtn){
 
-openBtn.addEventListener("click",()=>{
+openBtn.addEventListener("click", async () => {
 
 document.body.classList.add("opened");
 
-music.play().catch(()=>{});
+try{
 
-window.scrollTo({
-top:0,
-behavior:"smooth"
-});
+music.currentTime = 0;
 
-});
+await music.play();
+
+}catch(e){
+
+console.log(e);
 
 }
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+});
   
 // ======================
 // NAMA TAMU DARI URL
@@ -480,3 +501,22 @@ startAutoSlide();
 
 startAutoSlide();
 
+// ======================
+// PAUSE MUSIC WHEN TAB HIDDEN
+// ======================
+
+document.addEventListener("visibilitychange", () => {
+
+if (!music) return;
+
+if (document.hidden) {
+
+music.pause();
+
+} else if (document.body.classList.contains("opened")) {
+
+music.play().catch(()=>{});
+
+}
+
+});
