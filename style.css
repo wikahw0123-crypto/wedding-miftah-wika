@@ -2591,3 +2591,128 @@ opacity:1;
 transform:translateY(0);
 
 }
+
+
+/* =========================
+   MOBILE OPTIMIZATION
+========================= */
+
+@media screen and (max-width:768px){
+
+/* ---------- COVER ---------- */
+
+.cover-content{
+
+padding:35px 25px;
+
+}
+
+.cover-content h1{
+
+font-size:52px;
+
+}
+
+.small-text{
+
+font-size:14px;
+
+letter-spacing:3px;
+
+}
+
+.guest-box{
+
+width:100%;
+max-width:320px;
+min-width:auto;
+
+padding:18px 20px;
+
+}
+
+.guest-box h3{
+
+font-size:22px;
+
+}
+
+#openInvitation{
+
+padding:15px 34px;
+
+font-size:15px;
+
+}
+
+/* ---------- HERO ---------- */
+
+.hero{
+
+padding:80px 24px;
+
+}
+
+.hero-title{
+
+font-size:50px;
+
+}
+
+.hero-title span{
+
+font-size:42px;
+
+}
+
+.hero-date{
+
+font-size:18px;
+
+letter-spacing:2px;
+
+}
+
+.hero-quote{
+
+max-width:100%;
+
+padding:0 8px;
+
+font-size:15px;
+
+line-height:2.1;
+
+}
+
+/* ---------- SEMUA SECTION ---------- */
+
+section{
+
+padding:75px 24px;
+
+}
+
+.section-title{
+
+font-size:36px;
+
+}
+
+.section-subtitle{
+
+font-size:13px;
+
+letter-spacing:3px;
+
+}
+
+.section-text{
+
+font-size:15px;
+
+line-height:1.9;
+
+}
+
+}
