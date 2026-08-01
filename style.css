@@ -2665,13 +2665,10 @@ padding:80px 24px;
 
 .hero-title{
 
-font-size:44px;
-
-line-height:1.15;
-
-white-space:nowrap;
+font-size:40px;
 
 }
+   
 
 .hero-title span{
 
@@ -2735,15 +2732,17 @@ padding:75px 24px;
 
 .section-title{
 
-font-size:36px;
+font-size:30px;
+
+line-height:1.2;
 
 }
-
+   
 .section-subtitle{
 
-font-size:13px;
+font-size:11px;
 
-letter-spacing:3px;
+letter-spacing:4px;
 
 }
 
