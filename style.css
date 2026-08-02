@@ -1414,266 +1414,6 @@ padding:25px;
 font-size:14px;
 }
 
-/* ======================================================
-   RESPONSIVE MOBILE FINAL
-====================================================== */
-
-@media screen and (max-width:768px){
-
-/* SECTION */
-
-section{
-padding:70px 22px;
-}
-
-.container{
-max-width:100%;
-padding:0;
-}
-
-/* COVER */
-
-.cover-content{
-padding:30px 24px;
-}
-
-.small-text{
-font-size:13px;
-letter-spacing:4px;
-}
-
-.cover-content h1{
-font-size:52px;
-line-height:1.1;
-}
-
-.cover-content h1 span{
-display:block;
-margin:8px 0;
-}
-
-.guest-box{
-max-width:320px;
-min-width:unset;
-padding:18px;
-}
-
-.guest-box h3{
-font-size:20px;
-}
-
-#openInvitation{
-padding:14px 34px;
-font-size:15px;
-}
-
-/* HERO */
-
-.hero{
-padding:70px 24px;
-}
-
-.hero-content{
-max-width:100%;
-}
-
-.bismillah{
-font-size:24px;
-margin-bottom:20px;
-}
-
-.hero-title{
-font-size:46px;
-line-height:1.2;
-}
-
-.hero-title span{
-display:inline;
-font-size:.9em;
-margin:0 6px;
-}
-
-.hero-date{
-font-size:17px;
-letter-spacing:2px;
-margin-bottom:26px;
-}
-
-/* AYAT */
-
-.hero-quote{
-max-width:100%;
-padding:0 6px;
-}
-
-.hero-quote p{
-
-font-size:15px;
-line-height:2;
-
-text-align:justify;
-text-align-last:center;
-
-hyphens:auto;
-
-}
-
-.hero-quote h4{
-
-font-size:18px;
-margin-top:24px;
-
-}
-
-/* TITLE */
-
-.section-title{
-
-font-size:34px;
-
-}
-
-.section-subtitle{
-
-font-size:12px;
-letter-spacing:4px;
-
-}
-
-.section-text{
-
-font-size:15px;
-line-height:1.9;
-
-}
-
-/* COUPLE */
-
-.couple-wrapper{
-
-grid-template-columns:1fr;
-gap:50px;
-
-}
-
-/* COUNTDOWN */
-
-.countdown-wrapper{
-
-grid-template-columns:repeat(2,105px);
-gap:16px;
-
-}
-
-.count-box{
-
-width:105px;
-height:105px;
-
-}
-
-.count-box span{
-
-font-size:2.3rem;
-
-}
-
-.count-box small{
-
-font-size:.85rem;
-
-}
-
-/* EVENT */
-
-.event-wrapper{
-
-grid-template-columns:1fr;
-gap:22px;
-
-}
-
-/* LOCATION */
-
-.location-address{
-
-font-size:15px;
-line-height:1.9;
-
-}
-
-/* GALLERY */
-
-.slider-track{
-
-height:300px;
-
-}
-
-.slide-btn{
-
-width:42px;
-height:42px;
-
-font-size:18px;
-
-}
-
-/* STORY */
-
-.timeline-item{
-
-padding:22px;
-
-}
-
-.timeline-item h3{
-
-font-size:24px;
-
-}
-
-.timeline-item p{
-
-font-size:15px;
-line-height:1.9;
-
-}
-
-/* GIFT */
-
-.gift-card{
-
-width:100%;
-
-}
-
-/* RSVP */
-
-#wishForm{
-
-padding:25px;
-
-}
-
-#wishForm input,
-#wishForm textarea,
-#wishForm select{
-
-font-size:15px;
-
-}
-
-/* FOOTER */
-
-.footer{
-
-padding:70px 20px;
-
-}
-
-}
-
 /* =========================
    MUSIC BUTTON
 ========================= */
@@ -2794,6 +2534,265 @@ transform:translateY(0);
 
 }
 
+/* ======================================================
+   RESPONSIVE MOBILE FINAL
+====================================================== */
+
+@media screen and (max-width:768px){
+
+/* SECTION */
+
+section{
+padding:70px 22px;
+}
+
+.container{
+max-width:100%;
+padding:0;
+}
+
+/* COVER */
+
+.cover-content{
+padding:30px 24px;
+}
+
+.small-text{
+font-size:13px;
+letter-spacing:4px;
+}
+
+.cover-content h1{
+font-size:52px;
+line-height:1.1;
+}
+
+.cover-content h1 span{
+display:block;
+margin:8px 0;
+}
+
+.guest-box{
+max-width:320px;
+min-width:unset;
+padding:18px;
+}
+
+.guest-box h3{
+font-size:20px;
+}
+
+#openInvitation{
+padding:14px 34px;
+font-size:15px;
+}
+
+/* HERO */
+
+.hero{
+padding:70px 24px;
+}
+
+.hero-content{
+max-width:100%;
+}
+
+.bismillah{
+font-size:24px;
+margin-bottom:20px;
+}
+
+.hero-title{
+font-size:46px;
+line-height:1.2;
+}
+
+.hero-title span{
+display:inline;
+font-size:.9em;
+margin:0 6px;
+}
+
+.hero-date{
+font-size:17px;
+letter-spacing:2px;
+margin-bottom:26px;
+}
+
+/* AYAT */
+
+.hero-quote{
+max-width:100%;
+padding:0 6px;
+}
+
+.hero-quote p{
+
+font-size:15px;
+line-height:2;
+
+text-align:justify;
+text-align-last:center;
+
+hyphens:auto;
+
+}
+
+.hero-quote h4{
+
+font-size:18px;
+margin-top:24px;
+
+}
+
+/* TITLE */
+
+.section-title{
+
+font-size:34px;
+
+}
+
+.section-subtitle{
+
+font-size:12px;
+letter-spacing:4px;
+
+}
+
+.section-text{
+
+font-size:15px;
+line-height:1.9;
+
+}
+
+/* COUPLE */
+
+.couple-wrapper{
+
+grid-template-columns:1fr;
+gap:50px;
+
+}
+
+/* COUNTDOWN */
+
+.countdown-wrapper{
+
+grid-template-columns:repeat(2,105px);
+gap:16px;
+
+}
+
+.count-box{
+
+width:105px;
+height:105px;
+
+}
+
+.count-box span{
+
+font-size:2.3rem;
+
+}
+
+.count-box small{
+
+font-size:.85rem;
+
+}
+
+/* EVENT */
+
+.event-wrapper{
+
+grid-template-columns:1fr;
+gap:22px;
+
+}
+
+/* LOCATION */
+
+.location-address{
+
+font-size:15px;
+line-height:1.9;
+
+}
+
+/* GALLERY */
+
+.slider-track{
+
+height:300px;
+
+}
+
+.slide-btn{
+
+width:42px;
+height:42px;
+
+font-size:18px;
+
+}
+
+/* STORY */
+
+.timeline-item{
+
+padding:22px;
+
+}
+
+.timeline-item h3{
+
+font-size:24px;
+
+}
+
+.timeline-item p{
+
+font-size:15px;
+line-height:1.9;
+
+}
+
+/* GIFT */
+
+.gift-card{
+
+width:100%;
+
+}
+
+/* RSVP */
+
+#wishForm{
+
+padding:25px;
+
+}
+
+#wishForm input,
+#wishForm textarea,
+#wishForm select{
+
+font-size:15px;
+
+}
+
+/* FOOTER */
+
+.footer{
+
+padding:70px 20px;
+
+}
+
+}
 
 /* ---------- COVER ---------- */
 
