@@ -416,8 +416,13 @@ body.opened #cover{
 }
 
 .person:hover{
-    transform:translateY(-8px);
-    box-shadow:0 22px 45px rgba(0,0,0,.08);
+
+transform:translateY(-10px);
+
+box-shadow:
+
+0 25px 45px rgba(0,0,0,.10);
+
 }
 
 .photo-frame{
@@ -1204,6 +1209,664 @@ font-size:13px;
 color:#8b5e3c;
 
 font-style:italic;
+
+}
+
+/* ======================================================
+   PENUTUP
+====================================================== */
+
+.closing-section{
+
+position:relative;
+
+padding:100px 20px;
+
+overflow:hidden;
+
+text-align:center;
+
+background:
+linear-gradient(
+rgba(252,249,244,.95),
+rgba(252,249,244,.95)
+),
+url("assets/images/bg-texture.jpg");
+
+background-size:cover;
+background-position:center;
+
+}
+
+.closing-section::before{
+
+content:"";
+
+position:absolute;
+
+top:-35px;
+left:-35px;
+
+width:180px;
+height:180px;
+
+background:url("assets/images/flower-corner.png") no-repeat center;
+
+background-size:contain;
+
+opacity:.08;
+
+}
+
+.closing-section::after{
+
+content:"";
+
+position:absolute;
+
+bottom:-35px;
+right:-35px;
+
+width:180px;
+height:180px;
+
+background:url("assets/images/flower-corner.png") no-repeat center;
+
+background-size:contain;
+
+transform:rotate(180deg);
+
+opacity:.08;
+
+}
+
+.closing-section .container{
+
+position:relative;
+
+z-index:2;
+
+}
+
+.closing-ornament{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+gap:16px;
+
+margin-bottom:28px;
+
+font-size:28px;
+
+color:#c49a6c;
+
+}
+
+.closing-ornament::before,
+.closing-ornament::after{
+
+content:"";
+
+width:70px;
+
+height:1px;
+
+background:#d8b89c;
+
+opacity:.7;
+
+}
+
+.closing-text{
+
+max-width:700px;
+
+margin:0 auto;
+
+font-size:16px;
+
+line-height:2;
+
+color:#666;
+
+}
+
+.closing-salam{
+
+margin-top:40px;
+
+font-size:18px;
+
+font-weight:600;
+
+color:#6d213c;
+
+}
+
+.closing-name{
+
+margin-top:40px;
+
+}
+
+.closing-name h2{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:60px;
+
+font-weight:600;
+
+line-height:1.15;
+
+color:#6d213c;
+
+}
+
+.closing-name span{
+
+display:block;
+
+margin:10px 0;
+
+font-size:42px;
+
+font-style:italic;
+
+color:#c8a27c;
+
+}
+
+.closing-thanks{
+
+margin-top:28px;
+
+font-size:15px;
+
+color:#8b5e3c;
+
+font-style:italic;
+
+line-height:1.9;
+
+}
+
+/* ======================================================
+   FOOTER
+====================================================== */
+
+.footer{
+
+padding:35px 20px;
+
+background:#8b5e3c;
+
+color:white;
+
+text-align:center;
+
+font-size:14px;
+
+line-height:1.9;
+
+}
+
+.footer p{
+
+opacity:.95;
+
+}
+
+.footer a{
+
+color:white;
+
+font-weight:600;
+
+}
+
+/* ======================================================
+   MUSIC BUTTON
+====================================================== */
+
+.music-btn{
+
+position:fixed;
+
+right:20px;
+
+bottom:90px;
+
+width:58px;
+
+height:58px;
+
+border:none;
+
+border-radius:50%;
+
+background:#6d213c;
+
+color:white;
+
+font-size:22px;
+
+cursor:pointer;
+
+box-shadow:0 12px 28px rgba(0,0,0,.18);
+
+transition:.35s;
+
+z-index:999;
+
+}
+
+.music-btn:hover{
+
+transform:translateY(-4px);
+
+background:#8b5e3c;
+
+}
+
+/* ======================================================
+   BOTTOM NAVIGATION
+====================================================== */
+
+.bottom-nav{
+
+position:fixed;
+
+left:0;
+
+bottom:0;
+
+width:100%;
+
+display:flex;
+
+justify-content:space-around;
+
+align-items:center;
+
+padding:12px 0;
+
+background:rgba(255,255,255,.96);
+
+backdrop-filter:blur(10px);
+
+box-shadow:0 -6px 20px rgba(0,0,0,.08);
+
+z-index:998;
+
+}
+
+.bottom-nav a{
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+gap:4px;
+
+font-size:12px;
+
+font-weight:600;
+
+color:#8b5e3c;
+
+transition:.3s;
+
+}
+
+.bottom-nav a:hover{
+
+color:#6d213c;
+
+transform:translateY(-2px);
+
+}
+
+.bottom-nav i{
+
+font-size:18px;
+
+}
+
+/* ======================================================
+   REVEAL ANIMATION
+====================================================== */
+
+.reveal{
+
+opacity:0;
+
+transform:translateY(50px);
+
+transition:
+
+opacity .9s ease,
+
+transform .9s ease;
+
+will-change:transform,opacity;
+
+}
+
+.reveal.active{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+/* ======================================================
+   FADE UP
+====================================================== */
+
+.fade-up{
+
+opacity:0;
+
+transform:translateY(30px);
+
+transition:
+
+opacity .8s ease,
+
+transform .8s ease;
+
+}
+
+.fade-up.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+/* ======================================================
+   RESPONSIVE MOBILE FINAL
+====================================================== */
+
+@media screen and (max-width:768px){
+
+/* ---------- GLOBAL ---------- */
+
+section{
+    padding:70px 22px;
+}
+
+.container{
+    width:100%;
+    max-width:100%;
+    padding:0;
+}
+
+.section-title{
+    font-size:34px;
+}
+
+.section-subtitle{
+    font-size:12px;
+    letter-spacing:3px;
+}
+
+/* ---------- COVER ---------- */
+
+.cover-content{
+    padding:30px 24px;
+}
+
+.small-text{
+    font-size:13px;
+}
+
+.cover-content h1{
+    font-size:48px;
+    line-height:1.15;
+}
+
+.cover-content h1 span{
+    display:block;
+    margin:6px 0;
+}
+
+.guest-box{
+    min-width:unset;
+    width:100%;
+    max-width:310px;
+    padding:18px;
+}
+
+.guest-box h3{
+    font-size:20px;
+}
+
+#openInvitation{
+    width:auto;
+    padding:14px 34px;
+    font-size:15px;
+}
+
+/* ---------- HERO ---------- */
+
+.hero{
+    padding:75px 24px;
+}
+
+.hero-content{
+    width:100%;
+    max-width:100%;
+}
+
+.bismillah{
+    font-size:20px;
+    margin-bottom:18px;
+}
+
+.hero-title{
+    font-size:40px;
+    line-height:1.2;
+}
+
+.hero-title span{
+    display:inline;
+    margin:0 5px;
+}
+
+.hero-date{
+    font-size:17px;
+    letter-spacing:2px;
+}
+
+.hero-quote{
+    max-width:100%;
+    margin-top:25px;
+}
+
+.hero-quote p{
+
+    font-size:14px;
+
+    line-height:2.1;
+
+    text-align:center;
+
+    max-width:100%;
+
+    margin:auto;
+
+}
+
+.hero-quote h4{
+    font-size:17px;
+}
+
+/* ---------- COUPLE ---------- */
+
+.couple-wrapper{
+    gap:45px;
+}
+
+.person{
+    width:100%;
+}
+
+.photo-frame{
+    width:180px;
+    height:180px;
+}
+
+.person h3{
+    font-size:30px;
+}
+
+/* ---------- COUNTDOWN ---------- */
+
+.countdown-wrapper{
+    grid-template-columns:repeat(2,100px);
+    gap:15px;
+}
+
+.count-box{
+    width:100px;
+    height:100px;
+}
+
+.count-box span{
+    font-size:2.2rem;
+}
+
+.count-box small{
+    font-size:.8rem;
+}
+
+/* ---------- EVENT ---------- */
+
+.event-card{
+    width:100%;
+    padding:35px 25px;
+}
+
+.event-card h3{
+    font-size:30px;
+}
+
+/* ---------- LOCATION ---------- */
+
+.location-place{
+    font-size:30px;
+}
+
+.location-address{
+    font-size:15px;
+    line-height:1.9;
+}
+
+.map-wrapper iframe{
+    height:300px;
+}
+
+/* ---------- GALLERY ---------- */
+
+.slider-track{
+    height:280px;
+}
+
+.slide-btn{
+    width:42px;
+    height:42px;
+    font-size:18px;
+}
+
+/* ---------- STORY ---------- */
+
+.story-card{
+    padding:28px;
+}
+
+.story-card h3{
+    font-size:28px;
+}
+
+/* ---------- ADAB ---------- */
+
+.adab-wrapper{
+    grid-template-columns:1fr;
+}
+
+.adab-card{
+    padding:28px;
+}
+
+/* ---------- RSVP ---------- */
+
+#wishForm{
+    padding:25px;
+}
+
+#wishForm input,
+#wishForm textarea,
+#wishForm select{
+    font-size:15px;
+}
+
+/* ---------- GIFT ---------- */
+
+.gift-wrapper{
+    gap:22px;
+}
+
+.gift-card{
+    width:100%;
+}
+
+/* ---------- PENUTUP ---------- */
+
+.closing-name h2{
+    font-size:44px;
+}
+
+.closing-name span{
+    font-size:32px;
+}
+
+.closing-text{
+    font-size:15px;
+}
+
+/* ---------- MUSIC ---------- */
+
+.music-btn{
+    width:52px;
+    height:52px;
+    font-size:20px;
+    right:16px;
+    bottom:85px;
+}
+
+/* ---------- NAVBAR ---------- */
+
+.bottom-nav{
+    padding:10px 0;
+}
+
+.bottom-nav a{
+    font-size:11px;
+}
+
+.bottom-nav i{
+    font-size:17px;
+}
 
 }
 
