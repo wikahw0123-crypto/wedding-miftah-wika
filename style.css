@@ -1848,6 +1848,61 @@ section{
     z-index:2;
 }
 
+   /* BUNGA SAMAR COUNTDOWN */
+
+.countdown-section::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-40px;
+    left:-40px;
+
+    width:220px;
+    height:220px;
+
+    background-image:
+        url("assets/images/flower-corner.png");
+
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+
+    opacity:.08;
+
+    pointer-events:none;
+
+    z-index:0;
+}
+
+.countdown-section::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-40px;
+    right:-40px;
+
+    width:220px;
+    height:220px;
+
+    background-image:
+        url("assets/images/flower-corner.png");
+
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+
+    transform:rotate(180deg);
+
+    opacity:.08;
+
+    pointer-events:none;
+
+    z-index:0;
+}
 
 /* KOTAK COUNTDOWN */
 
