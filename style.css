@@ -435,6 +435,38 @@ transform:rotate(180deg);
 
 }
 
+/* ======================================================
+   OPENING - TEXT CENTER
+====================================================== */
+
+.opening{
+
+    text-align:center;
+
+}
+
+.opening-content{
+
+    max-width:720px;
+
+    margin-left:auto;
+    margin-right:auto;
+
+    text-align:center;
+
+}
+
+.opening-text{
+
+    text-align:center;
+
+    line-height:2;
+
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
 /* =========================
    COUPLE
 ========================= */
@@ -786,8 +818,13 @@ box-shadow:
 }
 
 .adab-icon{
-    font-size:42px;
+
+    font-size:28px;
+
+    line-height:1;
+
     margin-bottom:15px;
+
 }
 
 .adab-card h3{
@@ -884,6 +921,8 @@ position:relative;
 z-index:2;
 
 }
+
+/* ---------- FORM ---------- */
 
 #wishForm{
 
@@ -1012,6 +1051,98 @@ color:white;
 font-weight:bold;
 
 }
+
+
+/* ======================================================
+   RSVP WISH LIST
+====================================================== */
+
+#wishList{
+
+max-width:650px;
+
+margin:40px auto 0;
+
+display:flex;
+
+flex-direction:column;
+
+gap:18px;
+
+text-align:left;
+
+}
+
+.wish-card{
+
+background:rgba(255,255,255,.92);
+
+padding:22px 24px;
+
+border-radius:20px;
+
+border:1px solid rgba(216,184,156,.35);
+
+box-shadow:0 10px 28px rgba(0,0,0,.06);
+
+border-left:4px solid #8b5e3c;
+
+transition:.35s;
+
+}
+
+.wish-card:hover{
+
+transform:translateY(-3px);
+
+box-shadow:0 15px 35px rgba(0,0,0,.09);
+
+}
+
+.wish-card h4{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:22px;
+
+color:#6d213c;
+
+margin-bottom:7px;
+
+}
+
+.wish-card small{
+
+display:inline-block;
+
+padding:5px 12px;
+
+border-radius:20px;
+
+background:#f5ede6;
+
+color:#8b5e3c;
+
+font-size:11px;
+
+font-weight:600;
+
+margin-bottom:12px;
+
+}
+
+.wish-card p{
+
+font-size:14px;
+
+line-height:1.8;
+
+color:#555;
+
+margin:0;
+
+}
+```
 
 /* ======================================================
    TANDA KASIH
@@ -2114,6 +2245,14 @@ text-align:center;
     padding:28px;
 }
 
+.adab-icon{
+
+    font-size:25px;
+
+    margin-bottom:12px;
+
+}
+   
 /* ---------- RSVP ---------- */
 
 .rsvp{
@@ -2267,5 +2406,63 @@ box-shadow:0 10px 20px rgba(109,33,60,.25);
 .bottom-nav i{
     font-size:17px;
 }
+
+}
+
+/* ======================================================
+   ORNAMEN SECTION - FINAL
+   Menyamakan semua ornamen bunga
+====================================================== */
+
+.count-ornament,
+.event-divider,
+.closing-ornament{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    gap:16px;
+
+    color:#b58b5c;
+
+    font-size:28px;
+
+    text-align:center;
+
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+/* Garis kiri dan kanan */
+
+.count-ornament::before,
+.count-ornament::after,
+.event-divider::before,
+.event-divider::after,
+.closing-ornament::before,
+.closing-ornament::after{
+
+    content:"";
+
+    display:block;
+
+    width:60px;
+    height:1px;
+
+    background:#d1a46b;
+
+    opacity:.65;
+
+}
+
+/* Pastikan ornamen tidak ikut rata kiri */
+
+.count-ornament,
+.event-divider,
+.closing-ornament{
+
+    width:100%;
 
 }
