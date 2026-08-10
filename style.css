@@ -419,45 +419,61 @@ display:none;
 }
 
 /* =========================
-OPENING
+   OPENING
 ========================= */
 
 .opening{
+
 padding:90px 20px;
+
 background:#fffdf9;
+
 text-align:center;
+
 }
 
 .opening-content{
+
 max-width:720px;
+
 margin:auto;
-text-align:center;
+
 }
 
 .opening-title{
+
 font-family:'Cormorant Garamond',serif;
+
 font-size:42px;
+
 font-weight:600;
+
 color:#6d213c;
+
 margin-bottom:20px;
-text-align:center;
+
 }
 
 .opening-divider{
+
 font-size:30px;
+
 color:#b58b5c;
+
 margin-bottom:25px;
-text-align:center;
+
 }
 
 .opening-text{
-max-width:650px;
-margin:0 auto;
+
 font-size:17px;
+
 line-height:2;
+
 color:#666;
+
 white-space:pre-line;
-text-align:center;
+
 }
 
 /* =========================
