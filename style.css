@@ -252,51 +252,34 @@ body.opened #cover{
 }
 
 .cover-flower{
-
-position:absolute;
-
-width:240px;
-
-height:240px;
-
+position:fixed;
+width:180px;
+height:180px;
 background-size:contain;
-
 background-repeat:no-repeat;
-
 background-position:center;
-
 pointer-events:none;
-
-opacity:.90;
-
-z-index:1;
-
-filter:sepia(.6)
-       saturate(.9)
-       hue-rotate(-8deg);
-
+z-index:5;
 }
 
+/* Bunga kiri atas */
 .flower-left{
-
-top:-70px;
-
-left:-70px;
-
+top:-35px;
+left:-35px;
 background-image:url("assets/images/flower-corner.png");
-
 }
 
+/* Bunga kanan bawah */
 .flower-right{
-
-bottom:-70px;
-
-right:-70px;
-
+bottom:-35px;
+right:-35px;
 background-image:url("assets/images/flower-corner.png");
-
 transform:rotate(180deg);
+}
 
+/* Hilangkan bunga saat undangan sudah dibuka */
+body.opened .cover-flower{
+display:none;
 }
 
 /* ======================================================
