@@ -2466,3 +2466,138 @@ box-shadow:0 10px 20px rgba(109,33,60,.25);
     width:100%;
 
 }
+
+/* ======================================================
+PART A — ORNAMEN SECTION
+====================================================== */
+
+/* Ornamen utama ❦ */
+.count-ornament,
+.event-ornament,
+.location-ornament,
+.gallery-ornament,
+.story-ornament,
+.adab-ornament,
+.rsvp-ornament,
+.gift-ornament,
+.closing-ornament{
+
+```
+display:flex;
+
+justify-content:center;
+align-items:center;
+
+text-align:center;
+
+color:#b88a67;
+
+font-size:28px;
+
+line-height:1;
+
+margin:0 auto 20px;
+
+width:100%;
+```
+
+}
+
+/* Garis kiri dan kanan ornamen */
+.count-ornament::before,
+.count-ornament::after,
+.event-ornament::before,
+.event-ornament::after,
+.location-ornament::before,
+.location-ornament::after,
+.gallery-ornament::before,
+.gallery-ornament::after,
+.story-ornament::before,
+.story-ornament::after,
+.adab-ornament::before,
+.adab-ornament::after,
+.rsvp-ornament::before,
+.rsvp-ornament::after,
+.gift-ornament::before,
+.gift-ornament::after,
+.closing-ornament::before,
+.closing-ornament::after{
+
+```
+content:"";
+
+width:60px;
+
+height:1px;
+
+background:#d8b89c;
+
+opacity:.65;
+```
+
+}
+
+/* Jarak antara garis dan ❦ */
+.count-ornament,
+.event-ornament,
+.location-ornament,
+.gallery-ornament,
+.story-ornament,
+.adab-ornament,
+.rsvp-ornament,
+.gift-ornament,
+.closing-ornament{
+
+```
+gap:16px;
+```
+
+}
+
+/* Mobile */
+@media screen and (max-width:768px){
+
+```
+.count-ornament,
+.event-ornament,
+.location-ornament,
+.gallery-ornament,
+.story-ornament,
+.adab-ornament,
+.rsvp-ornament,
+.gift-ornament,
+.closing-ornament{
+
+    font-size:24px;
+
+    gap:12px;
+
+    margin-bottom:18px;
+
+}
+
+.count-ornament::before,
+.count-ornament::after,
+.event-ornament::before,
+.event-ornament::after,
+.location-ornament::before,
+.location-ornament::after,
+.gallery-ornament::before,
+.gallery-ornament::after,
+.story-ornament::before,
+.story-ornament::after,
+.adab-ornament::before,
+.adab-ornament::after,
+.rsvp-ornament::before,
+.rsvp-ornament::after,
+.gift-ornament::before,
+.gift-ornament::after,
+.closing-ornament::before,
+.closing-ornament::after{
+
+    width:45px;
+
+}
+```
+
+}
