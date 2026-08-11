@@ -1919,129 +1919,138 @@ section{
     font-size:30px;
 }
 
-/* ======================================================
-   FIX COUNTDOWN — FINAL
-====================================================== */
+/* =========================
+COUNTDOWN PREMIUM
+========================= */
 
 .countdown-section{
-    position:relative;
-    padding:100px 20px;
-    overflow:hidden;
+position:relative;
+padding:100px 20px;
+overflow:hidden;
 
-    background:
+```
+background:
     linear-gradient(
         rgba(252,249,244,.94),
         rgba(252,249,244,.94)
     ),
     url("assets/images/bg-texture.jpg");
 
-    background-size:cover;
-    background-position:center;
+background-size:cover;
+background-position:center;
+```
+
 }
 
-/* ORNAMEN COUNTDOWN */
+/* BUNGA SAMAR */
+
+.countdown-section::before{
+content:"";
+
+```
+position:absolute;
+top:-40px;
+left:-40px;
+
+width:220px;
+height:220px;
+
+background-image:url("assets/images/flower-corner.png");
+background-size:contain;
+background-repeat:no-repeat;
+background-position:center;
+
+opacity:.08;
+
+pointer-events:none;
+z-index:0;
+```
+
+}
+
+.countdown-section::after{
+content:"";
+
+```
+position:absolute;
+bottom:-40px;
+right:-40px;
+
+width:220px;
+height:220px;
+
+background-image:url("assets/images/flower-corner.png");
+background-size:contain;
+background-repeat:no-repeat;
+background-position:center;
+
+transform:rotate(180deg);
+
+opacity:.08;
+
+pointer-events:none;
+z-index:0;
+```
+
+}
+
+/* CONTAINER */
+
+.countdown-section .container{
+max-width:900px;
+margin:0 auto;
+
+```
+text-align:center;
+
+position:relative;
+z-index:2;
+```
+
+}
+
+/* ORNAMEN */
 
 .count-ornament{
-    display:flex;
-    justify-content:center;
-    align-items:center;
+display:flex;
+align-items:center;
+justify-content:center;
 
-    width:100%;
+```
+gap:16px;
 
-    gap:18px;
+font-size:28px;
+color:#d1a46b;
 
-    margin:0 auto 20px;
+margin-bottom:16px;
+```
 
-    font-size:28px;
-
-    color:#b88a67;
-
-    text-align:center;
 }
 
 .count-ornament::before,
 .count-ornament::after{
-    content:"";
+content:"";
 
-    display:block;
+```
+width:60px;
+height:1px;
 
-    width:70px;
-    height:1px;
+background:#d8b89c;
 
-    background:#d8b89c;
+opacity:.6;
+```
 
-    opacity:.7;
 }
 
+/* JUDUL */
 
-/* JUDUL COUNTDOWN */
-
-.countdown-section .container{
-    max-width:900px;
-
-    margin:0 auto;
-
-    text-align:center;
-
-    position:relative;
-
-    z-index:2;
+.countdown-section .section-subtitle{
+display:block;
+text-align:center;
 }
 
-   /* BUNGA SAMAR COUNTDOWN */
-
-.countdown-section::before{
-
-    content:"";
-
-    position:absolute;
-
-    top:-40px;
-    left:-40px;
-
-    width:220px;
-    height:220px;
-
-    background-image:
-        url("assets/images/flower-corner.png");
-
-    background-size:contain;
-    background-repeat:no-repeat;
-    background-position:center;
-
-    opacity:.08;
-
-    pointer-events:none;
-
-    z-index:0;
-}
-
-.countdown-section::after{
-
-    content:"";
-
-    position:absolute;
-
-    bottom:-40px;
-    right:-40px;
-
-    width:220px;
-    height:220px;
-
-    background-image:
-        url("assets/images/flower-corner.png");
-
-    background-size:contain;
-    background-repeat:no-repeat;
-    background-position:center;
-
-    transform:rotate(180deg);
-
-    opacity:.08;
-
-    pointer-events:none;
-
-    z-index:0;
+.countdown-section .section-title{
+text-align:center;
 }
 
 /* KOTAK COUNTDOWN */
@@ -2053,6 +2062,7 @@ display:grid;
 grid-template-columns:repeat(4,120px);
 
 justify-content:center;
+align-items:center;
 
 gap:20px;
 
@@ -2061,108 +2071,129 @@ margin-top:35px;
 
 }
 
-.count-box{
-    width:120px;
-    height:120px;
+/* SETIAP KOTAK */
 
-    background:
+.countdown-wrapper .count-box{
+width:120px;
+height:120px;
+
+```
+background:
     linear-gradient(
         180deg,
         #fffefc,
         #faf6f1
     );
 
-    border:1px solid rgba(216,184,156,.45);
+border:1px solid rgba(216,184,156,.45);
 
-    border-radius:20px;
+border-radius:20px;
 
-    display:flex;
+display:flex;
 
-    flex-direction:column;
+flex-direction:column;
 
-    justify-content:center;
+justify-content:center;
+align-items:center;
 
-    align-items:center;
+box-shadow:
+    0 12px 28px rgba(0,0,0,.08);
 
-    box-shadow:
-        0 12px 28px rgba(0,0,0,.08);
+transition:.35s;
+```
 
-    transition:.35s;
 }
 
-.count-box:hover{
-    transform:translateY(-6px);
+.countdown-wrapper .count-box:hover{
+transform:translateY(-6px);
 
-    box-shadow:
-        0 18px 36px rgba(0,0,0,.12);
+```
+box-shadow:
+    0 18px 36px rgba(0,0,0,.12);
+```
+
 }
 
-.count-box span{
-    font-size:3rem;
+/* ANGKA */
 
-    font-weight:700;
+.countdown-wrapper .count-box span{
+display:block;
 
-    color:#6d213c;
+```
+font-size:3rem;
+font-weight:700;
 
-    line-height:1;
+color:#6d213c;
 
-    margin-bottom:6px;
+line-height:1;
+
+margin-bottom:6px;
+```
+
 }
 
-.count-box small{
-    margin-top:4px;
+/* HARI / JAM / MENIT / DETIK */
 
-    font-size:.95rem;
+.countdown-wrapper .count-box small{
+display:block;
 
-    letter-spacing:1px;
+```
+margin-top:4px;
 
-    color:#777;
+font-size:.95rem;
+
+letter-spacing:1px;
+
+color:#777;
+```
+
 }
 
-
-/* COUNTDOWN MOBILE */
+/* =========================
+COUNTDOWN MOBILE
+========================= */
 
 @media screen and (max-width:768px){
 
-    .countdown-section{
-        padding:75px 18px;
-    }
+```
+.countdown-section{
+    padding:75px 18px;
+}
 
-    .count-ornament{
-        font-size:24px;
+.count-ornament{
+    font-size:24px;
+    gap:12px;
+    margin-bottom:18px;
+}
 
-        gap:12px;
+.count-ornament::before,
+.count-ornament::after{
+    width:50px;
+}
 
-        margin-bottom:18px;
-    }
+.countdown-wrapper{
+    grid-template-columns:repeat(2,105px);
 
-    .count-ornament::before,
-    .count-ornament::after{
-        width:50px;
-    }
+    gap:16px;
 
-    .countdown-wrapper{
-        grid-template-columns:repeat(4,105px);
+    margin-top:30px;
+}
 
-        gap:16px;
+.countdown-wrapper .count-box{
+    width:105px;
+    height:105px;
 
-        margin-top:30px;
-    }
+    border-radius:18px;
+}
 
-    .count-box{
-        width:105px;
-        height:105px;
+.countdown-wrapper .count-box span{
+    font-size:2.3rem;
+}
 
-        border-radius:18px;
-    }
-
-    .count-box span{
-        font-size:2.3rem;
-    }
-
-    .count-box small{
-        font-size:.85rem;
-    }
+.countdown-wrapper .count-box small{
+    font-size:.85rem;
+}
+```
 
 }
    
