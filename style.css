@@ -2654,3 +2654,61 @@ gap:16px;
 ```
 
 }
+
+/* ======================================================
+   FIX COUNTDOWN DESKTOP
+   JANGAN HAPUS KODE COUNTDOWN LAMA
+====================================================== */
+
+@media screen and (min-width:769px){
+
+    .countdown-section .countdown-wrapper{
+        display:grid !important;
+        grid-template-columns:repeat(4, 120px) !important;
+        justify-content:center !important;
+        align-items:center !important;
+        gap:20px !important;
+        width:100% !important;
+        margin:35px auto 0 !important;
+    }
+
+    .countdown-section .count-box{
+        width:120px !important;
+        height:120px !important;
+
+        display:flex !important;
+        flex-direction:column !important;
+        justify-content:center !important;
+        align-items:center !important;
+
+        background:linear-gradient(
+            180deg,
+            #fffefc,
+            #faf6f1
+        ) !important;
+
+        border:1px solid rgba(216,184,156,.45) !important;
+        border-radius:20px !important;
+
+        box-shadow:
+            0 12px 28px rgba(0,0,0,.08) !important;
+    }
+
+    .countdown-section .count-box span{
+        display:block !important;
+        font-size:3rem !important;
+        font-weight:700 !important;
+        color:#6d213c !important;
+        line-height:1 !important;
+        margin-bottom:6px !important;
+    }
+
+    .countdown-section .count-box small{
+        display:block !important;
+        margin-top:4px !important;
+        font-size:.95rem !important;
+        letter-spacing:1px !important;
+        color:#777 !important;
+    }
+
+}
