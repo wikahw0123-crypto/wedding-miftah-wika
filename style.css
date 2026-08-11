@@ -2712,3 +2712,25 @@ gap:16px;
     }
 
 }
+
+/* ======================================================
+   FIX BUNGA KANAN BAWAH — SECTION AYAT
+====================================================== */
+
+.hero{
+    position:relative;
+    overflow:hidden;
+}
+
+/* ======================================================
+   FIX JARAK BAWAH HERO — MOBILE
+====================================================== */
+
+@media screen and (max-width:768px){
+
+    .hero{
+        padding-top:75px;
+        padding-bottom:35px;
+    }
+
+}
