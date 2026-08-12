@@ -513,7 +513,7 @@ box-shadow:
 
 font-family:'Cormorant Garamond',serif;
 
-font-size:38px;
+font-size:34px;
 
 color:#6d213c;
 
@@ -770,7 +770,7 @@ font-size:20px;
 
 .story-card p{
 
-line-height:2;
+line-height:1.7;
 
 color:#666;
 
@@ -2272,7 +2272,7 @@ margin-bottom:25px;
 
 font-size:15px;
 
-line-height:1.9;
+line-height:1.7;
 
 color:#666;
 
@@ -2681,6 +2681,14 @@ line-height:1.9;
 
 }
 
+@media screen and (max-width:768px){
+
+    .story-card p{
+        line-height:1.7;
+    }
+
+}
+   
 /* GIFT */
 
 .gift-card{
