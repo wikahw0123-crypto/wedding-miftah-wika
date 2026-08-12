@@ -2071,25 +2071,37 @@ transform:scale(1);
 
 #cover{
     position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
     z-index:9999;
 
     opacity:1;
     visibility:visible;
 
     transition:
-        opacity 1.2s ease,
-        visibility 1.2s ease;
+        opacity 1.6s ease,
+        visibility 1.6s ease;
 }
+
+
+/* MAIN CONTENT AWAL */
 
 #main-content{
     display:none;
     opacity:0;
+    transform:translateY(20px);
 
     transition:
-        opacity 1.4s ease;
+        opacity 1.8s ease,
+        transform 1.8s ease;
 }
 
-/* Setelah tombol dibuka */
+
+/* =========================
+   SETELAH UNDANGAN DIBUKA
+========================= */
 
 body.opened #cover{
     opacity:0;
@@ -2097,9 +2109,11 @@ body.opened #cover{
     pointer-events:none;
 }
 
+
 body.opened #main-content{
     display:block;
     opacity:1;
+    transform:translateY(0);
 }
 
 #petals{
