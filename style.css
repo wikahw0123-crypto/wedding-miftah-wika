@@ -770,7 +770,7 @@ font-size:20px;
 
 .story-card p{
 
-line-height:1.7;
+line-height:1.5;
 
 color:#666;
 
@@ -787,18 +787,6 @@ padding:100px 20px;
 background:#fffdf9;
 
 text-align:center;
-
-}
-
-.adab-desc{
-
-max-width:650px;
-
-margin:20px auto 0;
-
-line-height:1.9;
-
-color:#666;
 
 }
 
@@ -2684,7 +2672,7 @@ line-height:1.9;
 @media screen and (max-width:768px){
 
     .story-card p{
-        line-height:1.7;
+        line-height:1.5;
     }
 
 }
