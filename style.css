@@ -2818,3 +2818,27 @@ line-height:2;
 }
 
 }
+
+/* =========================
+   ANIMASI ORNAMEN SECTION
+========================= */
+
+.event-divider,
+.count-ornament,
+.closing-ornament,
+.opening-divider {
+    opacity: 0;
+    transform: scaleX(0.3);
+    transition:
+        opacity 1s ease,
+        transform 1s ease;
+}
+
+/* Saat section sudah terlihat */
+.reveal.active .event-divider,
+.reveal.active .count-ornament,
+.reveal.active .closing-ornament,
+.reveal.active .opening-divider {
+    opacity: 1;
+    transform: scaleX(1);
+}
