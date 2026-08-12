@@ -524,31 +524,32 @@ music.play().catch(()=>{});
 });
 
 // ======================
-// REVEAL ON SCROLL
+// REVEAL ANIMATION
 // ======================
 
 const reveals = document.querySelectorAll(".reveal");
 
-function revealOnScroll(){
+const revealObserver = new IntersectionObserver(
+    (entries) => {
 
-reveals.forEach(item=>{
+        entries.forEach(entry => {
 
-const windowHeight = window.innerHeight;
+            if(entry.isIntersecting){
 
-const elementTop = item.getBoundingClientRect().top;
+                entry.target.classList.add("active");
 
-const revealPoint = 120;
+            }
 
-if(elementTop < windowHeight - revealPoint){
+        });
 
-item.classList.add("active");
+    },
+    {
+        threshold: 0.15
+    }
+);
 
-}
+reveals.forEach(item => {
+
+    revealObserver.observe(item);
 
 });
-
-}
-
-window.addEventListener("scroll", revealOnScroll);
-
-revealOnScroll();
