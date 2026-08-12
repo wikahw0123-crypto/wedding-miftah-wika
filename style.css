@@ -2065,34 +2065,41 @@ transform:scale(1);
 
 }
 
+/* =========================
+   TRANSISI BUKA UNDANGAN
+========================= */
+
 #cover{
+    position:fixed;
+    z-index:9999;
 
-transition:opacity 1s ease;
+    opacity:1;
+    visibility:visible;
 
+    transition:
+        opacity 1.2s ease,
+        visibility 1.2s ease;
 }
 
 #main-content{
+    display:none;
+    opacity:0;
 
-opacity:0;
+    transition:
+        opacity 1.4s ease;
+}
 
-transition:opacity 1s ease;
+/* Setelah tombol dibuka */
 
+body.opened #cover{
+    opacity:0;
+    visibility:hidden;
+    pointer-events:none;
 }
 
 body.opened #main-content{
-
-display:block;
-
-opacity:1;
-
-}
-
-body.opened #cover{
-
-opacity:0;
-
-pointer-events:none;
-
+    display:block;
+    opacity:1;
 }
 
 #petals{
