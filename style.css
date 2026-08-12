@@ -252,7 +252,7 @@ body.opened #cover{
 }
 
 .cover-flower{
-position:fixed;
+position:absolute;
 width:180px;
 height:180px;
 background-size:contain;
