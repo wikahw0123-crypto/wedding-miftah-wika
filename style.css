@@ -2248,13 +2248,13 @@ margin:auto;
 
 font-family:'Cormorant Garamond',serif;
 
-font-size:42px;
+font-size:34px;
 
 font-weight:600;
 
 color:#6d213c;
 
-margin-bottom:20px;
+margin-bottom:18px;
 
 }
 
@@ -2270,9 +2270,9 @@ margin-bottom:25px;
 
 .opening-text{
 
-font-size:17px;
+font-size:15px;
 
-line-height:2;
+line-height:1.9;
 
 color:#666;
 
@@ -2552,6 +2552,20 @@ margin-top:24px;
 
 }
 
+.opening-title{
+    font-size:30px;
+    line-height:1.25;
+}
+
+.opening-text{
+    font-size:14px;
+    line-height:1.9;
+}
+
+.opening-divider{
+    font-size:22px;
+}
+   
 /* TITLE */
 
 .section-title{
