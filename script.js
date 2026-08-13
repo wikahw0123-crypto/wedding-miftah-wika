@@ -553,3 +553,29 @@ reveals.forEach(item => {
     revealObserver.observe(item);
 
 });
+
+// ======================
+// PROTEKSI FOTO
+// ======================
+
+// Mencegah klik kanan pada gambar
+document.addEventListener("contextmenu", function(e){
+
+```
+if(e.target.tagName === "IMG"){
+    e.preventDefault();
+}
+```
+
+});
+
+// Mencegah gambar diseret
+document.addEventListener("dragstart", function(e){
+
+```
+if(e.target.tagName === "IMG"){
+    e.preventDefault();
+}
+```
+
+});
