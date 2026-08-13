@@ -239,7 +239,7 @@ transform:scale(1.05);
 
 .person h3{
 
-font-size:34px;
+font-size:30px;
 
 font-family:'Cormorant Garamond',serif;
 
@@ -513,7 +513,7 @@ box-shadow:
 
 font-family:'Cormorant Garamond',serif;
 
-font-size:34px;
+font-size:30px;
 
 color:#6d213c;
 
@@ -525,7 +525,7 @@ margin-bottom:18px;
 
 font-size:18px;
 
-line-height:1.8;
+line-height:1.4;
 
 color:#555;
 
@@ -541,7 +541,7 @@ color:#6d213c;
 
 .event-time{
 
-margin-top:12px;
+margin-top:10px;
 
 font-size:17px;
 
@@ -1224,7 +1224,7 @@ max-width:650px;
 
 margin:20px auto;
 
-line-height:2;
+line-height:1.5;
 
 color:#666;
 
@@ -2309,7 +2309,7 @@ text-align:center;
 
 font-family:'Cormorant Garamond',serif;
 
-font-size:38px;
+font-size:32px;
 
 color:#6d213c;
 
@@ -2325,7 +2325,7 @@ max-width:520px;
 
 margin:auto;
 
-line-height:2;
+line-height:1.5;
 
 color:#666;
 
@@ -2524,7 +2524,7 @@ padding:0 6px;
 .hero-quote p{
 
 font-size:15px;
-line-height:2;
+line-height:1.5;
 
 text-align:justify;
 text-align-last:center;
@@ -2796,7 +2796,7 @@ font-size:15px;
 
     font-size:15px;
 
-    line-height:2;
+    line-height:1.5;
 
     text-align:center;
 
