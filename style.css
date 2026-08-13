@@ -238,19 +238,14 @@ transform:scale(1.05);
 }
 
 .person h3{
-
-font-size:30px;
-
-font-family:'Cormorant Garamond',serif;
-
-color:#6d213c;
-
-margin-bottom:12px;
-
-position:relative;
-
-z-index:2;
-
+    font-size:26px;
+    font-family:'Cormorant Garamond',serif;
+    font-weight:600;
+    color:#6d213c;
+    line-height:1.15;
+    margin-bottom:10px;
+    position:relative;
+    z-index:2;
 }
 
 .person p{
@@ -334,21 +329,17 @@ transform:scale(1);
 }
 
 .parent-title{
-
-margin-top:12px;
-
-font-weight:600;
-
-color:#8b5e3c;
-
+    margin-top:8px;
+    font-size:14px;
+    font-weight:500;
+    color:#8b5e3c;
 }
 
 .parent-name{
-
-margin-top:8px;
-
-line-height:1.8;
-
+    margin-top:5px;
+    line-height:1.6;
+    font-size:14px;
+    color:#666;
 }
 
 /* =========================
