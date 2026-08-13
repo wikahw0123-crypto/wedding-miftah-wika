@@ -2901,15 +2901,5 @@ line-height:2;
 
 }
 
-/* =========================
-PROTEKSI FOTO
-========================= */
-
-/* Mencegah gambar diseret */
-.photo-frame img,
-.slide{
--webkit-user-drag:none;
-user-drag:none;
-user-select:none;
 -webkit-user-select:none;
 }
