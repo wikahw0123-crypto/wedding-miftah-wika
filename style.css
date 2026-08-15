@@ -2839,3 +2839,22 @@ line-height:2;
 
 -webkit-user-select:none;
 }
+
+/* =========================
+FIX POSISI TOMBOL MUSIK
+========================= */
+
+.music-btn{
+    position:fixed !important;
+    right:20px !important;
+    bottom:90px !important;
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    border:none;
+    background:#6d213c;
+    color:white;
+    font-size:20px;
+    cursor:pointer;
+    z-index:9999 !important;
+}
