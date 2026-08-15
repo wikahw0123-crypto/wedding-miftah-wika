@@ -164,39 +164,28 @@ object-fit:cover;
 
 transform:scale(1.05);
 
-}
-
 .photo-frame{
+    width:220px;
+    height:280px;
+    margin:auto;
+    padding:8px;
+    border-radius:110px 110px 35px 35px;
 
-width:220px;
+    background:linear-gradient(
+        135deg,
+        #e7cdb3,
+        #fff,
+        #d8b89c
+    );
 
-height:220px;
+    box-shadow:
+        0 12px 30px rgba(0,0,0,.08),
+        0 0 0 8px rgba(255,255,255,.5);
 
-margin:auto;
-
-padding:8px;
-
-border-radius:50%;
-
-background:linear-gradient(
-135deg,
-#e7cdb3,
-#fff,
-#d8b89c
-);
-
-box-shadow:
-0 12px 30px rgba(0,0,0,.08),
-0 0 0 8px rgba(255,255,255,.5);
-
-margin-bottom:25px;
-
-position:relative;
-
-z-index:2;
-
-overflow:hidden;
-
+    margin-bottom:25px;
+    position:relative;
+    z-index:2;
+    overflow:hidden;
 }
 
 .photo-frame img{
