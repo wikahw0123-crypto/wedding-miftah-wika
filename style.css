@@ -2106,3 +2106,41 @@ body.opened .cover-flower{
         bottom:76px !important;
     }
 }
+
+/* =========================
+   PENYELARASAN TEKS PANJANG
+========================= */
+
+.hero-quote p,
+.opening-text,
+.section-text,
+.story-card p,
+.adab-card p,
+.hadith-box,
+.location-address,
+.gift-text,
+.closing-text,
+.wish-card p {
+    line-height: 1.5;
+}
+
+/* =========================
+   TEKS PANJANG - MOBILE
+========================= */
+
+@media screen and (max-width:768px){
+
+    .hero-quote p,
+    .opening-text,
+    .section-text,
+    .story-card p,
+    .adab-card p,
+    .hadith-box,
+    .location-address,
+    .gift-text,
+    .closing-text,
+    .wish-card p {
+        line-height: 1.5;
+    }
+
+}
