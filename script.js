@@ -326,36 +326,42 @@ loadWishes();
 }
 
 async function loadWishes() {
+  try {
+    const res = await fetch(SCRIPT_URL);
 
-const res = await fetch(SCRIPT_URL);
+    if (!res.ok) {
+      throw new Error("Gagal mengambil data RSVP");
+    }
 
-const data = await res.json();
+    const data = await res.json();
 
-wishList.innerHTML = "";
+    wishList.innerHTML = "";
 
-// UPDATE JUMLAH UCAPAN
-if (wishesCount) {
-    wishesCount.innerText = data.length;
-}
+    if (wishesCount) {
+      wishesCount.innerText = data.length;
+    }
 
-data.reverse().forEach(item => {
+    data.reverse().forEach(item => {
+      wishList.innerHTML += `
+        <div class="wish-card">
+          <h4>${item.nama}</h4>
+          <small>${item.kehadiran}</small>
+          <p>${item.ucapan}</p>
+        </div>
+      `;
+    });
 
-wishList.innerHTML += `
+  } catch (error) {
+    console.error("RSVP Error:", error);
 
-<div class="wish-card">
-
-<h4>${item.nama}</h4>
-
-<small>${item.kehadiran}</small>
-
-<p>${item.ucapan}</p>
-
-</div>
-
-`;
-
-});
-
+    if (wishList) {
+      wishList.innerHTML = `
+        <p style="text-align:center;">
+          Ucapan belum dapat dimuat. Silakan coba beberapa saat lagi.
+        </p>
+      `;
+    }
+  }
 }
 
 // ======================
