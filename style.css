@@ -2044,9 +2044,9 @@ body.opened .cover-flower{
 
 }
 
-/* FIX RSVP - pastikan section RSVP selalu terlihat */
+/* FIX RSVP MOBILE */
 .rsvp .reveal {
     opacity: 1 !important;
-    transform: none !important;
     visibility: visible !important;
+    transform: none !important;
 }
